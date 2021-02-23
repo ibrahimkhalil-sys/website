@@ -1,0 +1,525 @@
+/*****************  ベース  ここから  *****************/
+
+
+/*****************  header向けモジュール  ここから  *****************/
+
+
+/* アイキャッチエリア */
+
+.l-header.header .top-visual {
+    background: url("../img/common/portfolio-eyecatch.jpg") center right no-repeat;
+    background-size: cover;
+    height: 40rem;
+}
+
+
+/*****************  main向けモジュール  ここから  *****************/
+
+
+/* アンカーリンクエリア */
+
+.main .container-primary.intro .page-menu {
+    margin: 120px auto 20px;
+    max-width: 1600px;
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+}
+
+.main .intro ul li a {
+    position: relative;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #bbb;
+}
+
+.l-main .container-primary-inner {
+    width: 80%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.portfolio-button {
+    margin-bottom: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    border: 2px solid;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+
+/* Webシステム受託開発 */
+
+.l-main .container-business-primary:nth-child(even) {
+    background: var(--tone-color);
+}
+
+.l-main .container-business-primary:not(.anchor) {
+    width: 100%;
+    padding: 10rem 0;
+    margin-top: 0;
+}
+
+.l-main .container-business-primary.development {
+    background-image: url('../img/common/business_development.png');
+    background-repeat: no-repeat;
+    background-position: right 10rem;
+    background-size: 60%;
+}
+
+.l-main .container-business-primary-inner {
+    width: 80%;
+    max-width: 1800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.l-main .development .heading-fill {
+    margin-top: 20rem;
+}
+
+.heading-fill {
+    font-size: 2.5rem;
+    width: 50%;
+    min-width: 400px;
+    background: rgba(255, 255, 255, .9);
+    z-index: 10;
+    padding: 5rem 0 5rem 6rem;
+    font-weight: 200;
+}
+
+.l-main .development .text-content {
+    background: rgba(255, 255, 255, .9);
+    margin-top: 9rem;
+    padding: 10rem 6rem;
+    line-height: 2.4;
+    z-index: 10;
+}
+
+.l-main .text-content {
+    font-size: 2.0rem;
+}
+
+
+/* プロセス */
+
+.l-main .process h3 {
+    text-align: center;
+}
+
+.l-main .heading-decoration {
+    font-style: italic;
+    font-size: 4rem;
+    transform: scale(0.88, 1);
+    font-weight: 300;
+}
+
+.main .tiles {
+    display: flex;
+    justify-content: center;
+}
+
+.main .tiles>img {
+    width: 30%;
+    height: auto;
+    margin: 0 1%;
+}
+
+
+/* アチーブメント */
+
+.main .tiles-achievement {
+    margin: 0.5%;
+    font-size: 1.8rem;
+}
+
+.main .tiles-achievement-title {
+    background-color: #231A0B;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.main .tiles-achievement-text {
+    background-color: #FFFFFF;
+    border: #231A0B 1px dashed;
+    border-top: 0;
+    padding: 10px;
+}
+
+.container-business-primary.achievement .tiles {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* 営業のお仕事 */
+
+.l-main .engineer .heading-fill {
+    background: var(--tone-color);
+}
+
+.l-main .engineer .heading-fill+.text-content {
+    width: 93%;
+    margin: 10rem auto;
+}
+
+.l-main .engineer .container-expansion {
+    width: 92%;
+    margin: 0 auto;
+    position: relative;
+    padding: 4rem 6rem 8rem;
+}
+
+.l-main .engineer .container-expansion::before {
+    content: "";
+    background-image: linear-gradient(to right, #000, #000 3px, transparent 3px, transparent 8px), linear-gradient(to right, #000, #000 3px, transparent 3px, transparent 8px), linear-gradient(to bottom, #000, #000 3px, transparent 3px, transparent 8px), linear-gradient(to bottom, #000, #000 3px, transparent 3px, transparent 8px);
+    background-size: 8px 1px, 8px 1px, 1px 8px, 1px 8px;
+    background-position: left top, left bottom, left top, right top;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.l-main .engineer .expansion-title {
+    margin-bottom: 3rem;
+}
+
+.l-main .engineer .expansion {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(33.1rem, 1fr));
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.l-main .engineer .expansion .text-content {
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+
+/* スクール */
+
+.l-main .container-business-primary.school {
+    background-image: url('../img/common/recruit_photo.png');
+    background-repeat: no-repeat;
+    background-position: right 10rem;
+    background-size: 60%;
+}
+
+.l-main .school .heading-fill {
+    margin-top: 20rem;
+}
+
+.heading-fill {
+    font-size: 2.5rem;
+    width: 50%;
+    min-width: 400px;
+    background: rgba(255, 255, 255, .9);
+    z-index: 10;
+    padding: 5rem 0 5rem 6rem;
+    font-weight: 200;
+}
+
+.l-main .school .text-content {
+    background: rgba(255, 255, 255, .9);
+    margin-top: 9rem;
+    padding: 10rem 6rem;
+    line-height: 2.4;
+    z-index: 10;
+}
+
+
+/* ポイント */
+
+.l-main .point h3 {
+    text-align: center;
+}
+
+.l-main .point .tiles {
+    display: grid;
+    margin-top: 6rem;
+    gap: 30px;
+    grid-template-columns: repeat(2, minmax(50rem, 1fr));
+}
+
+.l-main .point .tiles>* {
+    background: var(--tone-color);
+    padding: 7% 5%;
+}
+
+.l-main .point .tiles-point-title {
+    text-align: center;
+}
+
+
+/* Techpalette */
+
+.techpalette .btn-more-techpalette {
+    display: block;
+    width: 70%;
+    max-width: 600px;
+    padding: 10px 0;
+    margin: auto;
+    color: #fff;
+    background: var(--point-color);
+    cursor: pointer;
+    text-align: center;
+}
+
+.l-main .techpalette .text-content {
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* 自社サービス開発 */
+
+.l-main .service .heading-fill {
+    background: var(--tone-color);
+}
+
+.l-main .service .heading-fill+.text-content {
+    width: 93%;
+    margin: 10rem auto;
+}
+
+.l-main .container-business-primary.service {
+    padding-bottom: 0;
+}
+
+
+/* アチーブメント */
+
+.l-main .container-business-primary.achievement.area-bottom {
+    margin-bottom: 20.6rem;
+}
+
+
+/*****************************************************************
+                        タブレット版のための追加設定
+*****************************************************************/
+
+@media screen and (max-width: 1200px) {
+     :root {
+        --header-height: 0;
+    }
+    .l-header.header .top-visual {
+        margin-top: 0px;
+        height: 60.2vw;
+        ;
+        font-size: 5vw;
+    }
+    /* ページ内遷移ずれ防止、前のコンテンツの末尾にdivとして埋め込む */
+    .l-main .anchor-point {
+        margin: 0;
+        /* 1200px未満画面のときはヘッダー調整をしないので高さを0にする */
+        height: 0;
+    }
+    /* エンジニアのお仕事 */
+    .l-main .container-business-primary.development {
+        background-size: 80%;
+    }
+    /* プログラミングスクール */
+    .l-main .container-business-primary.school {
+        background-size: 80%;
+    }
+    /* ポイント */
+    .l-main .point .tiles {
+        grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    }
+    ;
+}
+
+
+/*****************************************************************
+                          SP版のための追加設定
+*****************************************************************/
+
+
+/* スマホ縦画面の幅で判定 幅576px以下の場合に適用 */
+
+@media screen and (max-width: 576px) {
+    .l-main .container-primary-inner {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .main .container-primary.intro h2 {
+        padding-top: 60px;
+    }
+    .main .container-primary h2 {
+        padding-left: 0%;
+    }
+    .l-main .heading-decoration {
+        font-size: 2rem;
+    }
+    .main .container-primary.intro .contents {
+        font-size: 1.2rem;
+    }
+    .main .container-primary .contents {
+        padding: 0 5%;
+    }
+    .main .container-primary.intro .page-menu {
+        margin: 60px auto 10px;
+    }
+    .l-main .container-primary.intro .page-menu {
+        font-size: 1.1rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    }
+    .l-main .container-business-primary:not(.anchor) {
+        padding: 3rem 0;
+    }
+    /* エンジニアのお仕事 */
+    .l-main .container-business-primary-inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .l-main .container-business-primary.development {
+        background-image: url(../img/common/business_development.png);
+        background-repeat: no-repeat;
+        background-position: right 10rem;
+        background-size: 80%;
+    }
+    .l-main .container-business-primary.development .heading-fill {
+        font-size: 1.2rem;
+        width: 50%;
+        min-width: 255px;
+        padding: 1rem 0 1rem 2rem;
+        margin-top: 10rem;
+    }
+    .l-main .development .text-content {
+        margin-top: 3.5rem;
+        font-size: 1.2rem;
+        line-height: 1.9;
+        padding: 3rem 2rem;
+    }
+    /* PROCESS */
+    .l-main .container-primary.process .tiles {
+        flex-direction: column;
+    }
+    .l-main .container-primary.process .tiles>img {
+        width: 80%;
+        margin: auto;
+    }
+    .l-main .container-primary.process {
+        padding: 3rem 0;
+    }
+    /* achivement */
+    .main .tiles-achievement {
+        font-size: 1.2rem;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 30px !important;
+    }
+    .slick-prev,
+    .slick-next {
+        width: 30px !important;
+        height: 30px !important;
+        padding-top: 10px !important;
+    }
+    .slick-prev {
+        left: -30px !important;
+    }
+    .slick-next {
+        right: -30px !important;
+    }
+    /* 営業のお仕事 */
+    .l-main .container-business-primary.engineer .heading-fill {
+        font-size: 1.2rem;
+        width: 50%;
+        min-width: 255px;
+        padding: 1rem 0 1rem 2rem;
+        margin: 3rem 0 0;
+    }
+    .l-main .engineer .heading-fill+.text-content {
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .l-main .text-content {
+        font-size: 1.2rem;
+    }
+    .l-main .engineer .text-content,
+    .l-main .engineer .container-expansion {
+        width: 90%;
+    }
+    .l-main .engineer .expansion {
+        display: block;
+    }
+    .l-main .engineer .container-expansion {
+        padding: 4rem;
+    }
+    .l-main .engineer .container-expansion .text-content {
+        width: 100%;
+        margin: 2rem 0 0;
+        font-size: 1.2rem;
+    }
+    /* プログラミングスクール */
+    .l-main .container-business-primary.school {
+        background-image: url(../img/common/recruit_photo.png);
+        background-repeat: no-repeat;
+        background-position: right 10rem;
+        background-size: 80%;
+    }
+    .l-main .container-business-primary.school .heading-fill {
+        font-size: 1.2rem;
+        width: 50%;
+        min-width: 255px;
+        padding: 1rem 0 1rem 2rem;
+        margin-top: 10rem;
+    }
+    .l-main .school .text-content {
+        margin-top: 3.5rem;
+        font-size: 1.2rem;
+        line-height: 1.9;
+        padding: 3rem 2rem;
+    }
+    /* POINT */
+    .l-main .point .tiles {
+        display: block;
+        width: 90%;
+        margin: 2rem auto 0;
+    }
+    .l-main .point .tiles>* {
+        font-size: 1.2rem;
+        min-height: 5rem;
+        padding: 1.8rem;
+        margin: 14px 0;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, .05);
+    }
+    /* 自社サービス開発 */
+    .l-main .container-business-primary.service .heading-fill {
+        font-size: 1.2rem;
+        width: 50%;
+        min-width: 255px;
+        padding: 1rem 0 1rem 2rem;
+        margin: 3rem 0 0;
+    }
+    .l-main .service .heading-fill+.text-content {
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .l-main .text-content {
+        font-size: 1.2rem;
+    }
+    /* フロー下部 */
+    .l-main .container-business-primary.achievement.area-bottom {
+        margin-bottom: 6rem;
+    }
+}

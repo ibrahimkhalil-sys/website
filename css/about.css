@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+/*****************  ベース  ここから  *****************/
+
+
+/*****************  header向けモジュール  ここから  *****************/
+
+
+/* アイキャッチエリア */
+
+.l-header.header .top-visual {
+    position: relative;
+    margin-top: var(--header-height);
+    background: url("../img/common/eyecatch-about.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60rem;
+}
+
+.l-header.header .top-visual .catch {
+    position: absolute;
+    margin: 0 20px;
+    top: 45%;
+    right: 5%;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.l-header.header .top-visual .catch-copyabout {
+    position: absolute;
+    margin: 10rem;
+    top: 1%;
+    left: 30%;
+    font-size: 3rem;
+}
+
+
+/*****************  main向けモジュール  ここから  *****************/
+
+
+/* ページ内共通 */
+
+.main .container-primary {
+    width: 100%;
+    background: #fff;
+}
+
+.main .container-primary.profile {
+    width: 100%;
+    background: var(--tone-color);
+}
+
+.main .container-primary-inner {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* イントロ */
+
+.main .container-primary.intro h2 {
+    padding-top: 50px;
+}
+
+
+/* アンカーリンクエリア */
+
+.main .container-primary.intro .page-menu {
+    margin: 120px auto 20px;
+    max-width: 500px;
+    text-align: center;
+    font-style: italic;
+}
+
+.main .container-primary.intro .page-menu a {
+    border-bottom: 1px solid #bbb;
+}
+
+.main .container-primary.intro .page-menu a:hover {
+    opacity: 0.3;
+}
+
+
+/* ページ内遷移ずれ防止、前のコンテンツの末尾にdivとして埋め込む */
+
+.l-main .anchor-point {
+    position: static;
+    z-index: -100;
+    margin: calc(-1 * var(--header-height) / 2) 0;
+    /* 1200px未満画面のときは高さを0にする */
+    height: var(--header-height);
+}
+
+
+/* PROFILE */
+
+.main .container-primary.profile h2 {
+    padding-bottom: 0px;
+}
+
+.main .container-primary.profile table {
+    margin: 70px auto;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+}
+
+.main .container-primary.profile th,
+.main .container-primary.profile td {
+    border: solid 1px #bbb;
+    padding: 80px 5.75vw;
+    text-align: left;
+}
+
+.main .container-primary.profile th {
+    width: 18vw;
+    min-width: 270px;
+    vertical-align: top;
+    border-left-style: none;
+    font-weight: 300;
+}
+
+.main .container-primary.profile td {
+    border-right-style: none;
+}
+
+.main .container-primary.profile td a {
+    color: var(--point-color);
+    letter-spacing: 0;
+}
+
+
+/* 会社所在地 */
+
+.main .container-primary.profile .office-info:nth-of-type(odd) {
+    margin-bottom: 30px;
+}
+
+.main .container-primary.profile .office-info:nth-of-type(2) {
+    margin-bottom: 65px;
+}
+
+
+/* HISTORY */
+
+.main .container-primary.history img {
+    display: block;
+    margin: 60px auto 100px;
+    width: 90%;
+    max-width: 1047px;
+}
+
+
+/* OTHER MEMBERS */
+
+.l-main .member-list {
+    background-color: #F9F9F9;
+}
+
+.l-main .container-primary-inner .tiles .content {
+    width: 100%;
+    display: block;
+    padding-top: 2%;
+    box-sizing: border-box;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 4px 2px 5px -1px rgb(0 0 0 / 20%)
+}
+
+.l-main .container-primary-inner .tiles .content .list-area {
+    width: 100%;
+    background-color: rgba(251, 251, 251, 0.95);
+    padding: 5%;
+    margin: 37% 0 0 0;
+}
+
+.l-main .member-list .container-primary-inner {
+    padding-top: 50px;
+    margin-bottom: 5rem;
+}
+
+.area-job .l-main .container-primary .tiles .content {
+    margin: 10px;
+}
+
+.l-main .container-primary .tiles .area-job {
+    margin: 1rem;
+}
+
+.l-main .tiles .area-job span {
+    display: block;
+    color: #FBFBFB;
+    width: calc(100% / 2);
+    padding: 2%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    text-align: center;
+    background: #64B4CD;
+}
+
+.l-main .tiles .area-job.instructor span {
+    background: #A1CF87;
+}
+
+.l-main .tiles .area-job.sales span {
+    background: #8F7AB7;
+}
+
+.l-main .tiles .area-personal-info {
+    margin: 1rem 2rem;
+}
+
+.l-main .area-personal-info .text-name {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.l-main .area-personal-info .text-hire-date {
+    font-size: 1.2rem;
+}
+
+.l-main .tiles .br {
+    display: none;
+}
+
+
+/* MEMBER 画像指定 */
+
+.l-main .tiles .image-1 {
+    background-image: url(../img/common/image-kamil-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-2 {
+    background-image: url(../img/common/image-kamil-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-3 {
+    background-image: url(../img/common/image-kamil-3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-4 {
+    background-image: url(../img/common/image-kamil-4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-5 {
+    background-image: url(../img/common/image-kamil-5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-6 {
+    background-image: url(../img/common/image-kamil-6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-7 {
+    background-image: url(../img/common/image-kamil-7.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-8 {
+    background-image: url(../img/common/image-kamil-8.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-9 {
+    background-image: url(../img/common/image-kamil-9.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.l-main .tiles .image-10 {
+    background-image: url(../img/common/image-kamil-10.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*****************************************************************
+                        タブレット版のための追加設定
+*****************************************************************/
+
+@media screen and (max-width: 1200px) {
+    /* ページ内遷移ずれ防止、前のコンテンツの末尾にdivとして埋め込む */
+    .l-main .anchor-point {
+        margin: 0;
+        /* 1200px未満画面のときは高さを0にする */
+        height: 0;
+    }
+    .main .container-primary.profile th {
+        min-width: 150px;
+        padding: 60px 3.5vw;
+    }
+    .main .container-primary.profile td {
+        min-width: 315px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+
+/*****************************************************************
+                          SP版のための追加設定
+*****************************************************************/
+
+
+/* スマホ縦画面の幅で判定 幅576px以下の場合に適用 */
+
+
+/*****************  ベース  ここから  *****************/
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    /*****************  header向けモジュール  ここから  *****************/
+    .l-header.header .top-visual {
+        background: url("../img/sp/sp_eyecatch_about.png") center center no-repeat;
+        background-size: cover;
+        height: 305px;
+    }
+    .l-header.header .top-visual .catch {
+        font-size: 1.2rem;
+    }
+    .main .container-primary-inner {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    /* コンテンツエリア共通パーツカスタム */
+    .main .container-primary h2 {
+        padding-left: 0%;
+    }
+    .main .container-primary .contents {
+        padding: 0 5%;
+    }
+    /* イントロ */
+    .main .container-primary.intro h2 {
+        padding-top: 60px;
+    }
+    .main .container-primary.intro .contents {
+        font-size: 1.2rem;
+    }
+    /* アンカーリンクエリア */
+    .main .container-primary.intro .page-menu {
+        margin: 60px auto 10px;
+    }
+    .main .container-primary.intro .page-menu a:hover {
+        opacity: 1;
+    }
+    /* PROFILE */
+    .main .container-primary.profile table {
+        margin: 40px auto;
+        border-collapse: collapse;
+        letter-spacing: 0.1rem;
+        font-size: 1.2rem;
+    }
+    .main .container-primary.profile th {
+        padding: 30px 3vw;
+        min-width: 110px;
+        border-right-style: none;
+        vertical-align: middle;
+    }
+    .main .container-primary.profile td {
+        min-width: 200px;
+        border-left-style: none;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /* 会社所在地 */
+    .main .container-primary.profile .office-info:nth-of-type(odd) {
+        margin-bottom: 20px;
+    }
+    .main .container-primary.profile .office-info:nth-of-type(2) {
+        margin-bottom: 30px;
+    }
+    /* HISTORY */
+    .main .container-primary.history h2 {
+        padding-top: 70px;
+    }
+    .main .container-primary.history img {
+        margin-top: 20px;
+        padding: 0 15px;
+        width: 100%;
+    }
+}

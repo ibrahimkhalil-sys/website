@@ -1,0 +1,1113 @@
+@charset "UTF-8";
+
+/*****************  ベース　ここから  *****************/
+
+html {
+    font-size: 62.5%;
+    /* 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", "Noto Sans JP", "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    width: 100%;
+    line-height: 1.8;
+    /* 22px */
+    font-size: 2.2em;
+    font-weight: 300;
+    color: #231a0b;
+    letter-spacing: 0.1em;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #231a0b;
+}
+
+:root {
+    --base-color: #231a0b;
+    --point-color: #39aa9a;
+    --tone-color: #F9F9F9;
+    --header-height: 12rem;
+}
+
+
+/*****************  レイアウト　ここから  *****************/
+
+.l-header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.l-main {
+    margin: 0 auto;
+    /* IEで不具合が発生するので、ここでwidth:100%とdisplay:block必須 */
+    width: 100%;
+    display: block;
+}
+
+
+/*****************  テーマ汎用　ここから  *****************/
+
+
+/* sp専用部分を非表示にする　pc専用部分はspメディアクエリ内でnoneを指定 */
+
+.sp-display {
+    display: none !important;
+}
+
+.sp-inline-display {
+    display: none !important;
+}
+
+.pc-inline-display {
+    display: inline-block !important;
+}
+
+.pc-display {
+    display: block !important;
+}
+
+.content-flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pc-flex-container-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pc-flex-container-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pc-flex-container-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/*****************  header向けモジュール　ここから  *****************/
+
+.l-header h1 {
+    font-weight: 300;
+}
+
+.l-header.header .fixed-menu {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: var(--header-height);
+    z-index: 100;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.05);
+}
+
+.l-header .fixed-menu .header-logo {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 4rem;
+}
+
+.l-header .fixed-menu .header-logo img {
+    width: 4.6vw;
+    height: 4.6vw;
+}
+
+.l-header .fixed-menu .header-copy {
+    padding: 0.9vw;
+    font-size: 1.6vw;
+    line-height: 1.6vw;
+    font-style: italic;
+    transform: scale(0.88, 1);
+}
+
+
+/* ヘッダーメニュー */
+
+.l-header .header-menu {
+    display: flex;
+    margin: 0;
+    max-width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.l-header .header-menu li {
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-header .header-menu li:not(:last-child) {
+    margin: 0 1.3vw;
+}
+
+.l-header .header-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-header .header-menu li:not(:last-child) a {
+    margin: 0 8px;
+}
+
+.l-header .header-menu li:last-child a {
+    height: var(--header-height);
+    width: 200px;
+    margin: 0;
+}
+
+.l-header .header-menu a .menu-text {
+    position: relative;
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    transform: scale(0.88, 1);
+}
+
+.l-header .header-menu .menu-text::after {
+    position: absolute;
+    left: 0;
+    top: calc(50% + 1.6rem);
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #bbb;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.l-header .header-menu li:not(:last-child) .menu-text:hover::after {
+    top: calc(50% + 1.4rem);
+    opacity: 1;
+    visibility: visible;
+}
+
+.l-header ul li.entry-select {
+    background: var(--base-color);
+    margin: 0 20px 0 40px;
+}
+
+.l-header ul li.entry-select a {
+    color: #fff;
+}
+
+.l-header ul li.entry-select a:hover::after {
+    opacity: 0;
+}
+
+.l-header ul li.entry-select:hover {
+    background-color: #3c3933;
+}
+
+
+/* 大画面では表示しないメニュー */
+
+.l-header .mini-menu {
+    display: none;
+}
+
+
+/* 英字の場合の文字サイズ調整 */
+
+.l-header.header .top-visual .en-text {
+    font-size: 2.3rem;
+    word-break: break-all;
+}
+
+
+/* アイキャッチエリア */
+
+.l-header.header .top-visual {
+    position: relative;
+    margin-top: var(--header-height);
+    background: url("../img/common/eyecatch-kamil.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120rem;
+}
+
+.l-header.header .top-visual .catch-copy {
+    position: absolute;
+    margin: 50px;
+    top: 30%;
+    left: 5%;
+    font-size: 3rem;
+}
+
+.l-header.header .top-visual .vertical {
+    position: absolute;
+    writing-mode: vertical-rl;
+    bottom: 0%;
+    right: 45%;
+    height: 28%;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+    font-style: italic;
+    border-left: solid 1px;
+    margin-bottom: -4.2vw;
+    color: rgb(234, 243, 243);
+}
+
+
+/*****************  main向けモジュール　ここから  *****************/
+
+.main .container-primary:not(.full-width) {
+    max-width: 100%;
+    padding: 0;
+}
+
+
+/* コンテンツエリア共通パーツ */
+
+.main .container-primary h2 {
+    padding-bottom: 4rem;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0;
+    font-family: bold;
+}
+
+.main .container-primary .more-button {
+    margin: 60px 0 10px 0;
+    margin-left: auto;
+    padding: 25px 0;
+    width: 343px;
+    background: var(--base-color);
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 0rem;
+}
+
+
+/* ABOUTエリア */
+
+.main .container-primary.about {
+    padding: 10rem 7.3vw 5rem;
+    color: #fff;
+    background: url("../img/common/about_bg.png") center center no-repeat;
+}
+
+.main .container-primary.portfolio {
+    padding: 10rem 7.3vw 5rem;
+    color: #fff;
+    background: url("../img/common/about_bg.png") center center no-repeat;
+}
+
+.main .container-primary .contents {
+    margin: 0 auto;
+    padding: 0 6.8vw;
+}
+
+.main .container-primary .contents p:first-of-type {
+    margin-bottom: 50px;
+}
+
+.container-primary.about .more-button {
+    background: #fff;
+    color: var(--base-color);
+}
+
+
+/* portfolioエリア */
+
+.container-primary.portfolio .portfolio-button {
+    width: 40rem;
+    margin-top: -10rem;
+    margin-left: 19rem;
+}
+
+.container-primary.portfolio .portfolio-image {
+    margin-left: -40px;
+    width: 35%;
+}
+
+.container-primary.portfolio .portfolio-text {
+    width: 65%;
+    margin: 5rem 7.3vw 5rem 4.7vw;
+}
+
+.container-primary.portfolio .portfolio-text .contents {
+    margin-left: 10%;
+    margin-bottom: 5.24vw;
+    padding: 0;
+}
+
+.container-primary.portfolio .portfolio-text .more-button {
+    width: 100%;
+    max-width: 343px;
+}
+
+
+/*skillsエリア*/
+
+.main .container-primary.skills {
+    position: relative;
+    max-width: 100%;
+    min-height: 704px;
+    background: var(--tone-color);
+    background-image: url(../img/common/skills.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 40%;
+}
+
+.main .container-primary.skills h2 {
+    max-width: 100%;
+    background: var(--tone-color);
+}
+
+.main .container-primary.skills .contents {
+    padding-right: 0;
+}
+
+.container-primary.skills .skills-text {
+    margin: 12rem 11rem 5rem 7.3vw;
+}
+
+.main .container-primary.skills .more-button {
+    margin-left: 6.8vw;
+}
+
+
+/*contact area*/
+
+.main .container-primary.contact {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.main .container-primary.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 40%;
+    list-style: none;
+}
+
+.container-primary.contact ul li {
+    background-size: 1rem;
+    width: 350px;
+    min-width: 50px;
+    flex-basis: 25%;
+}
+
+.container-primary.contact ul li a {
+    background-size: 1rem;
+    display: inline-block;
+    padding: 7.3vw 1.2vw 3.65vw;
+    font-size: 1.6rem;
+}
+
+.container-primary.contact ul .lead-sentence {
+    margin-top: 70px;
+}
+
+
+/*****************  footer向けモジュール　ここから  *****************/
+
+.l-footer.footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ボタン */
+
+.l-footer.footer hr {
+    margin: 80px auto 0;
+    width: 90%;
+    border: none;
+    border-bottom: solid 1px #bbb;
+}
+
+.l-footer.footer .recruit-botton,
+.l-footer.footer .entry-botton {
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+    flex-direction: column;
+    flex: 1;
+    width: 50vw;
+    height: 25.9vw;
+    background: yellowgreen;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+.l-footer.footer .entry-botton {
+    background: var(--base-color);
+}
+
+
+/* フッターメニュー */
+
+.l-footer.footer .footer-menu {
+    position: relative;
+    font-size: 85%;
+}
+
+.l-footer ul .left-items,
+.l-footer ul .right-items {
+    display: flex;
+}
+
+.l-footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.l-footer ul li a {
+    display: block;
+    margin: 2.6vw 2.1vw 3.12vw;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+}
+
+.l-footer.footer .flex-order img {
+    margin-left: 5%;
+    width: 204px;
+    height: 32px;
+}
+
+.l-footer.footer small {
+    padding-bottom: 60px;
+    letter-spacing: 0;
+    font-size: 70%;
+    font-style: italic;
+}
+
+.l-footer .go-top {
+    z-index: 800;
+    position: fixed;
+    width: 15rem;
+    bottom: 3rem;
+    right: 8rem;
+    display: none;
+    font-style: italic;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .5rem;
+}
+
+.l-footer .go-top::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    background-image: linear-gradient(to right, #000, #000 5px, transparent 5px, transparent 10px);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+}
+
+.l-footer .go-text {
+    transform: scale(0.88, 1);
+}
+
+.l-footer .triangle {
+    width: 0;
+    height: 0;
+    top: 1rem;
+    position: relative;
+    border-style: solid;
+    border-width: 0 1rem 1.73rem 1rem;
+    border-color: transparent transparent var(--base-color) transparent;
+}
+
+.see-more-button {
+    background-color: rgb(36, 182, 240);
+    font-size: 1.6rem;
+}
+
+.contact-button {
+    background-color: rgb(16, 17, 17);
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+/*****************************************************************
+　　　　　　　　　　　　タブレット版のための追加設定
+*****************************************************************/
+
+@media screen and (max-width: 1200px) {
+    /* 大画面ヘッダーメニュー */
+    .l-header .header-menu {
+        display: none;
+    }
+    /* 大画面で非表示にしていたものを表示 */
+    .l-header .mini-menu {
+        display: block;
+    }
+    .l-header.header .fixed-menu {
+        display: none;
+    }
+    .l-header .mini-menu .mini-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1299;
+        top: calc(2vw + 0.5rem);
+        left: calc(2vw + 0.5rem);
+    }
+    .l-header .mini-menu .header-image {
+        width: 60px;
+        height: 60px;
+        margin-right: calc(0.5vw + 0.2rem);
+    }
+    .l-header .mini-copy {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        font-style: italic;
+        transform: scale(0.88, 1);
+    }
+    .l-header .mini-copy.invert {
+        color: #fff;
+    }
+    .l-header.header .top-visual {
+        margin-top: 0;
+    }
+    /*　ハンバーガーボタン　*/
+    .drawer-button {
+        display: block;
+        position: fixed;
+        z-index: 1301;
+        top: 1.8vw;
+        right: 2vw;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .drawer-button span {
+        display: block;
+        position: absolute;
+        width: calc(1vw + 30px);
+        height: 2px;
+        left: 6px;
+        background: rgba(115, 110, 101, 0.8);
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+    .drawer-button span:nth-child(1) {
+        top: 10px;
+    }
+    .drawer-button span:nth-child(2) {
+        top: 25px;
+    }
+    .drawer-button span:nth-child(3) {
+        top: 40px;
+    }
+    /* ナビ開いてる時のボタン */
+    .drawer-button.active span:nth-child(1) {
+        top: 26px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .drawer-button.active span:nth-child(2),
+    .drawer-button.active span:nth-child(3) {
+        top: 26px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .drawer-menu {
+        position: fixed;
+        z-index: 1300;
+        top: 0;
+        left: 0;
+        color: var(--base-color);
+        text-align: center;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .drawer-menu.active .filter {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        top: 0;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .drawer-menu ul.menu-list {
+        position: fixed;
+        display: none;
+        top: 0;
+        right: 0;
+        margin: 0 0 0 auto;
+        padding: 10vw 0 0;
+        width: 90%;
+        min-width: 200px;
+        max-width: 360px;
+        background: #fff;
+        z-index: 305;
+        min-height: 100vh;
+    }
+    .drawer-menu ul li {
+        list-style-type: none;
+        padding: 0;
+        display: none;
+        text-align: left;
+    }
+    .drawer-menu ul li:last-child {
+        padding-bottom: 0;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+    }
+    .drawer-menu ul li a {
+        display: inline-block;
+        padding: 1rem 0 1vw 4rem;
+        text-decoration: none;
+        font-size: 2.6rem;
+        font-style: italic;
+        letter-spacing: 0.1rem;
+        transform: scale(0.88, 1);
+    }
+    .drawer-menu ul li:last-child a {
+        padding: 1.8rem 0;
+    }
+    .l-header .mini-menu a .menu-text {
+        position: relative;
+        font-size: calc(2rem + 1vw);
+        font-style: italic;
+        letter-spacing: 0.1rem;
+        transform: scale(0.88, 1);
+    }
+    .l-header .mini-menu .menu-text::after {
+        position: absolute;
+        left: 0;
+        top: calc(50% + 1.6rem + 1vw);
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #bbb;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    .l-header .mini-menu li:not(:last-child) .menu-text:hover::after {
+        top: calc(50% + 1.3rem + 0.8vw);
+        opacity: 1;
+        visibility: visible;
+    }
+    .l-header .mini-menu li.entry-select {
+        margin: 0;
+        width: 90%;
+        min-width: 200px;
+        max-width: 360px;
+    }
+    /* このクラスを、jQueryで付与・削除する */
+    .drawer-menu.active {
+        opacity: 100;
+    }
+    .drawer-menu.active ul.menu-list {
+        display: block;
+    }
+    .drawer-menu.active .fileter {
+        display: block;
+    }
+    .drawer-menu.active li {
+        display: block;
+    }
+    .container-primary.contact ul li {
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+    .container-primary.contact ul li a {
+        width: 200%;
+        padding: 10vw;
+        font-size: inherit;
+        font-style: none;
+    }
+    .container-primary.contact ul .lead-sentence {
+        margin-top: 30px;
+    }
+}
+
+
+/*****************************************************************
+　　　　　　　　　　　　　SP版のための追加設定
+*****************************************************************/
+
+
+/* スマホ縦画面の幅で判定 幅576px以下の場合に適用 */
+
+
+/*****************  ベース　ここから  *****************/
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    /*****************  テーマ汎用　ここから  *****************/
+    /* sp専用部分を非表示にする　pc専用部分はspメディアクエリ内でnoneを指定 */
+    .sp-display {
+        display: inline-block !important;
+    }
+    .pc-inline-display {
+        display: none !important;
+    }
+    .pc-display {
+        display: none !important;
+    }
+    /* スマホ版のときに改行する位置の候補でまとめたブロックに指定 */
+    .sp-wrap {
+        display: inline-block;
+    }
+    .pc-flex-container-space-between {
+        display: block;
+    }
+    .pc-flex-container-space-around {
+        display: block;
+    }
+    .pc-flex-container-start {
+        display: block;
+    }
+    /*****************  header向けモジュール　ここから  *****************/
+    .l-header.header .fixed-menu {
+        position: relative;
+        background: rgba(0, 0, 0, 0);
+        z-index: none;
+    }
+    .l-header .header-logo {
+        padding: 10px 20px;
+    }
+    .l-header .header-logo img {
+        width: 35px;
+        height: 35px;
+    }
+    .l-header .header-copy {
+        padding: 3px 10px;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .l-header .mini-menu .header-image {
+        width: 35px;
+        height: 35px;
+        margin-right: calc(0.5vw + 0.1rem);
+    }
+    .l-header .mini-copy {
+        font-size: 1.3rem;
+    }
+    /*　ハンバーガーボタン　*/
+    .drawer-button {
+        top: 1rem;
+        right: 1rem;
+        width: 36px;
+        height: 36px;
+    }
+    .drawer-button span {
+        width: calc(1vw + 24px);
+        left: 0;
+    }
+    .drawer-button span:nth-child(1) {
+        top: 8px;
+    }
+    .drawer-button span:nth-child(2) {
+        top: 18px;
+    }
+    .drawer-button span:nth-child(3) {
+        top: 28px;
+    }
+    /* ナビ開いてる時のボタン */
+    .drawer-button.active span:nth-child(1) {
+        top: 1.8rem;
+        left: 0.2rem;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .drawer-button.active span:nth-child(2),
+    .drawer-button.active span:nth-child(3) {
+        top: 1.8rem;
+        left: 0.2rem;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    /* アイキャッチエリア */
+    .l-header.header {
+        position: relative;
+        background: url("../img/common/eyecatch-kamil.jpg") center center / cover no-repeat;
+        max-width: 100vw;
+        width: 100vw;
+    }
+    .l-header.header .top-visual {
+        background: none;
+        width: 100vw;
+        height: 514px;
+    }
+    .l-header.header .top-visual .catch-copy {
+        margin: 0 20px;
+        top: 60%;
+        left: 0;
+        right: 0;
+        font-size: 2rem;
+        word-break: break-all;
+    }
+    /* 英字の場合の文字サイズ調整 */
+    .l-header.header .top-visual .en-text {
+        font-size: 1.5rem;
+        max-width: 90%;
+        letter-spacing: 0;
+    }
+    .l-header.header .top-visual .vertical {
+        margin-bottom: -14vw;
+        padding: 0.5rem;
+        bottom: 0%;
+        right: 44%;
+        height: 22%;
+        letter-spacing: 0rem;
+        font-size: 1.5rem;
+        border-left: solid 1px #bbb;
+    }
+    /*****************  main向けモジュール　ここから  *****************/
+    /* NEWSエリア */
+    .container-primary.news {
+        margin: 16.9vw 7vw;
+        line-height: initial;
+        font-size: 11px;
+    }
+    .container-primary.news .info-headline {
+        margin-bottom: 10px;
+        font-size: 1.8rem;
+    }
+    .container-primary.news .info-contents .date {
+        margin-right: 1rem;
+    }
+    /* コンテンツエリア共通パーツ */
+    .main .container-primary h2 {
+        padding-left: 10%;
+        padding-bottom: 2rem;
+        padding-top: 6rem;
+        font-size: 2.5rem;
+    }
+    .main .container-primary .contents {
+        line-height: 2.5rem;
+        padding: 0 15%;
+        font-size: 1.4rem;
+    }
+    .main .container-primary .more-button {
+        margin: 40px auto;
+        padding: 17px;
+        width: 220px;
+        font-size: 1.8rem;
+        font-style: italic;
+        letter-spacing: 0rem;
+        text-align: center;
+    }
+    /* ABOUTエリア */
+    .main .container-primary.about {
+        padding: 20px 0 40px;
+        color: #fff;
+        width: 100vw;
+        background: url("../img/common/about_bg.png") center center no-repeat;
+    }
+    .main .container-primary .contents p:first-of-type {
+        margin-bottom: 20px;
+    }
+    .container-primary.about .more-button {
+        margin: 60px auto;
+        background: #fff;
+        color: var(--base-color);
+    }
+    /* portfolioエリア */
+    .container-primary.portfolio {
+        margin: 0 auto;
+    }
+    .container-primary.portfolio .portfolio-text h2 {
+        padding: 5rem;
+        text-align: center;
+    }
+    .container-primary.portfolio .portfolio-text {
+        margin: 0rem auto;
+        width: 100%;
+    }
+    .container-primary.portfolio .portfolio-image {
+        margin-left: inherit;
+        max-width: 30rem;
+    }
+    .container-primary.portfolio .about-text {
+        margin-bottom: 0;
+        padding: 0 5%;
+    }
+    .container-primary.portfolio .right-image {
+        text-align: right;
+    }
+    .container-primary.portfolio .portfolio-image:last-of-type {
+        margin-left: inherit;
+        vertical-align: top;
+    }
+    .container-primary.portfolio .portfolio-text .more-button {
+        max-width: 220px;
+    }
+    /*MEMBERエリア*/
+    .main .container-primary.member {
+        padding-top: 0px;
+        padding-left: 0px;
+        min-height: 414px;
+    }
+    .main .container-primary.member .member-text {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .main .container-primary.member img {
+        width: 50%;
+        max-width: 55%;
+    }
+    .main .container-primary.member .more-button {
+        margin: 40px auto;
+    }
+    /*contact area*/
+    .main .container-primary.contact {
+        margin: 0 auto;
+        padding-top: 25px;
+        text-align: left;
+    }
+    .main .container-primary.contact h2 {
+        margin: inherit;
+        padding: 50px;
+        text-align: center;
+    }
+    .main .container-primary.contact ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        padding: 0;
+        max-width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+    .main .container-primary.contact ul> :first-child,
+    .main .container-primary.contact ul> :last-child {
+        background: var(--tone-color);
+    }
+    .container-primary.contact ul li {
+        max-width: 100%;
+        flex-basis: 50%;
+    }
+    .container-primary.contact ul li a {
+        width: 150px;
+        display: inline-block;
+        padding: 10vw;
+        font-size: inherit;
+        font-style: none;
+    }
+    .container-primary.contact ul .lead-sentence {
+        margin-top: 30px;
+    }
+    /*****************  footer向けモジュール　ここから  *****************/
+    /* ボタン */
+    .l-footer.footer hr {
+        margin: 45px auto 25px;
+        width: 90%;
+        border: solid 1px #bbb;
+    }
+    .l-footer.footer .recruit-botton,
+    .l-footer.footer .entry-botton {
+        width: 100%;
+        height: 34vw;
+        font-size: 2.5rem;
+        letter-spacing: 0;
+    }
+    /* フッターメニュー */
+    .l-footer.footer .flex-order {
+        display: flex;
+        justify-content: space-around;
+    }
+    .l-footer.footer .flex-order .footer-menu {
+        order: 2;
+        position: relative;
+    }
+    .l-footer ul .left-items,
+    .l-footer ul .right-items {
+        display: list-item;
+        text-align: left;
+    }
+    .l-footer ul li a {
+        display: inline-block;
+        margin: 0.5rem 1.5rem;
+        font-style: italic;
+        letter-spacing: 0.1rem;
+    }
+    .l-footer.footer .flex-order {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    .l-footer.footer .flex-order img {
+        order: 1;
+        width: 101px;
+        height: 15px;
+    }
+    .l-footer.footer small {
+        padding-bottom: 10px;
+    }
+    .l-footer .go-top {
+        width: 3.9rem;
+        bottom: 3rem;
+        right: 2.5rem;
+        font-size: 1.1rem;
+    }
+    .l-footer .go-top::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        margin: auto;
+        background-image: linear-gradient(to right, #000, #000 4px, transparent 4px, transparent 8px);
+        background-size: 8px 1px;
+        background-repeat: repeat-x;
+    }
+    .l-footer .triangle {
+        top: .2rem;
+        border-width: 0 .55rem .95rem .55rem;
+    }
+}

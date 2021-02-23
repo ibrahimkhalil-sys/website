@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+/*****************  ベース  ここから  *****************/
+
+
+/*****************  header向けモジュール  ここから  *****************/
+
+
+/* アイキャッチエリア */
+
+.l-header.header .top-visual {
+  background: url("../img/common/eyecatch_member.png") center right no-repeat;
+  background-size: cover;
+  height: 676px;
+}
+
+.l-header.header .top-visual .catch {
+  position: absolute;
+  margin: 0 20px;
+  top: 45%;
+  right: 5%;
+  font-size: 3rem;
+  color: #fff;
+}
+
+
+/*****************  main向けモジュール  ここから  *****************/
+
+
+/* ページ内共通 */
+
+.main .container-primary {
+  width: 100%;
+  background: #fff;
+}
+
+.main .container-primary.profile {
+  width: 100%;
+  background: var(--tone-color);
+}
+
+.main .container-primary-inner {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* イントロ */
+
+.main .container-primary.intro h2 {
+  padding-top: 50px;
+}
+
+
+/* アンカーリンクエリア */
+
+.l-main .member-index ul {
+  margin: 10rem 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.l-main .member-index ul li a {
+  position: relative;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #bbb;
+}
+
+.l-main .member-index ul li a:hover {
+  opacity: 0.3;
+}
+
+
+/* ページ内遷移ずれ防止、前のコンテンツの末尾にdivとして埋め込む */
+
+/* #member-engineer,#member-school,#member-sales{
+  margin-top: calc(-150px + 2%);
+  padding-top: 150px;
+} */
+
+/* MEMBER */
+
+.main .container-primary.member {
+  background-color: #fff;
+  background-image: none;
+}
+
+.main .member-inner {
+  padding-top:0;
+}
+
+.main .container-primary.member ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main .container-primary.member ul li {
+  width: calc(100% / 3 - 4%);
+  margin: 2%;
+  box-sizing: border-box;
+}
+
+.main .container-primary.member ul li a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding-top: 56.25%;
+  box-sizing: border-box;
+}
+
+.main .container-primary.member ul li div {
+  width: 100%;
+  background-color: rgba(251, 251, 251, 0.95);
+  padding: 5%;
+  margin: 30% 0 0 0;
+}
+
+.main .container-primary.member h4 {
+  color:#FBFBFB;
+  width: calc(100% / 2.5);
+  padding: 2%;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.main .container-primary.member .engineer {
+  background-color: #64B4CD;
+}
+
+.main .container-primary.member .school-instructor {
+  background-color: #A1CF87;
+}
+
+.main .container-primary.member .sales {
+  background-color: #8F7AB7;
+}
+
+.main .container-primary.member h3 {
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 2% 10% 0 10%;
+  font-size: 3rem;
+}
+
+.main .container-primary.member p {
+  font-size: 1.25rem;
+  margin: 0 10% 2% 10%;
+}
+.main .container-primary.member p .br {
+  display: none;
+}
+
+
+/* MEMBER 画像指定 */
+
+.main .container-primary.member .engineer-1 {
+  background-image: url(../img/common/member_icon_T.O.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .engineer-2 {
+  background-image: url(../img/common/member_icon_H.K.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .engineer-3 {
+  background-image: url(../img/common/member_icon_Y.O.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .engineer-4 {
+  background-image: url(../img/common/member_icon_K.K.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .engineer-5 {
+  background-image: url(../img/common/member_icon_Y.A.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .engineer-6 {
+  background-image: url(../img/common/member_icon_A.M.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .engineer-7 {
+  background-image: url(../img/common/member_icon_Y.M.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .school-1 {
+  background-image: url(../img/common/member_icon_S.S.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .school-2 {
+  background-image: url(../img/common/member_icon_S.Y.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main .container-primary.member .sales-1 {
+  background-image: url(../img/common/member_icon_A.S.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/*****************************************************************
+		タブレット版のための追加設定
+*****************************************************************/
+
+@media screen and (max-width: 1200px) {
+  /* ページ内遷移ずれ防止、前のコンテンツの末尾にdivとして埋め込む */
+  .l-main .anchor-point {
+    margin: 0;
+    /* 1200px未満画面のときは高さを0にする */
+    height: 0;
+  }
+  /* アンカーリンクエリア */
+  .main .container-primary.intro .page-menu {
+    margin: 60px auto 10px;
+  }
+  .main .container-primary.intro .page-menu a:hover {
+    opacity: 1;
+  }
+  .l-main .member-index ul {
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 3rem;
+  }
+  .l-main .member-index ul li{
+    margin: 0 0 2rem 0;
+  }
+  .main .container-primary.member h4 {
+    width: calc(100% / 1.5);
+    min-width: 100px;
+  }
+  .main .container-primary.member h3 {
+    margin: 2% 5% 0 5%;
+    font-size: 2rem;
+  }
+  .main .container-primary.member p {
+    margin: 0 5% 2% 5%;
+  }
+  .main .container-primary.member p .br {
+    display: inline-block;
+  }
+}
+
+
+/*****************************************************************
+		SP版のための追加設定
+*****************************************************************/
+
+
+/* スマホ縦画面の幅で判定 幅576px以下の場合に適用 */
+
+
+/*****************  ベース  ここから  *****************/
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  /*****************  header向けモジュール  ここから  *****************/
+  .l-header.header .top-visual {
+    background: url("../img/sp/sp_eyecatch_check.png") center center no-repeat;
+    background-size: cover;
+    height: 305px;
+  }
+  .l-header.header .top-visual .catch {
+    font-size: 1.2rem;
+  }
+  .main .container-primary-inner {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .main .member-inner{
+    padding-bottom: 5rem;
+  }
+
+  /* コンテンツエリア共通パーツカスタム */
+  .main .container-primary h2 {
+    padding-left: 0%;
+  }
+  .main .container-primary .contents {
+    padding: 0 5%;
+  }
+  /* イントロ */
+  .main .container-primary.intro h2 {
+    padding-top: 60px;
+  }
+  .main .container-primary.intro .contents {
+    font-size: 1.2rem;
+  }
+  /* アンカーリンクエリア */
+  .main .container-primary.intro .page-menu {
+    margin: 60px auto 10px;
+  }
+  .main .container-primary.intro .page-menu a:hover {
+    opacity: 1;
+  }
+  .l-main .member-index ul {
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 3rem;
+    margin: 3rem;
+  }
+
+  /* MEMBER */
+  .main .container-primary.member ul li {
+    width: calc(100% / 2 - 2%);
+    margin: 1%;
+  }
+  .main .container-primary.member h4 {
+    color: #fff;
+    width: calc(100% / 2);
+    font-size: 0.6rem;
+  }
+  .main .container-primary.member h3 {
+    font-size: 1.6rem;
+  }
+  .main .container-primary.member p {
+    font-size: 0.8rem;
+  }
+}

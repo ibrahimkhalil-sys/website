@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHDZ8B41L8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KHDZ8B41L8');
+    </script>
+
+    <title>hajilov's</title>
+    <meta charset="utf-8">
+    <!-- スマホ対応-phone settings -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="author" content="kamil hajilov">
+    <meta name="copyright" content="kamil hajilov">
+    <meta name="description" content="hajilov's portfolio">
+    <meta name="keywords" content="kamil,hajilov,software,developer,ITエンジニア,システム開発者,java developer,プログラマー,computer science">
+    <!-- resetCSS -->
+    <link href="css/reset.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="l-header header">
+        <div class="content-flex-space-between fixed-menu">
+            <a href="/index" class="header-logo">
+                <img class="header-image" src="img/common/kamil-logo.png" alt="kamil logo">
+                <h1 class="header-copy">Kamil <br> Hajilov <br> <br> jr. full-stack developer</h1>
+            </a>
+            <nav class="pc-display">
+                <ul class="header-menu">
+                    <li><a href="about"><span class="menu-text">ABOUT</span></a></li>
+                    <li><a href="resume"><span class="menu-text">RESUME</span></a></li>
+                    <li class="entry-select"><button class="contact-button" onClick="document.getElementById('contact').scrollIntoView();">CONTACT</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mini-menu">
+            <a href="/index" class="mini-logo">
+                <img class="header-image" src="img/common//kamil-logo.png" alt="kamil logo">
+                <div class="mini-copy">Kamil<br>full-stack developer</div>
+            </a>
+            <div class="drawer-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="drawer-menu">
+                <ul class="menu-list">
+                    <li><a href="/index"><span class="menu-text">TOP</span></a></li>
+                    <li><a href="about"><span class="menu-text">ABOUT</span></a></li>
+                    <li><a href="member"><span class="menu-text">RESUME</span></a></li>
+                    <li class="entry-select"><button class="contact-button" onClick="document.getElementById('contact').scrollIntoView();">CONTACT</button>
+                    </li>
+                </ul>
+                <div class="filter" id="filter"></div>
+            </div>
+        </div>
+        <div class="top-visual">
+
+            <a href="#about-area" class="vertical">scroll</a>
+        </div>
+    </header>
+
+    <main class="l-main main">
+
+        <section id="about" class="container-primary portfolio">
+            <div class="about-text">
+
+                <button class="portfolio-button" onClick="document.getElementById('my-projects').scrollIntoView();">      Projects      </button>
+
+                <button class="portfolio-button" onClick="document.getElementById('my-projects').scrollIntoView();">Open Source Projects</button>
+
+            </div>
+        </section>
+
+        <section id="my-projects" class="container-primary skills">
+            <div class="pc-flex-container-space-between">
+                <img class="pc-display portfolio-image" src="img/common/portfolio.png" alt="">
+                <div class="portfolio-text">
+                    <h2>portfolio</h2>
+                    <div class="contents">
+                        Since joining WonderTree, I have been involved in the following projects.
+
+                        <p>
+                            Example 1:
+                            <br>【Overview】
+                            <br>Development of ordering system for retail companies
+                            <br>【I did】
+                            <br>・Development from zero
+                            <br>・ Screen repair and batch repair related to ordering
+                            <br>・ Creating test specifications
+                            <br>・ Unit test
+                            <br>【Environment】
+                            <br>・Java,Spring boot
+                            <br>・SQL,MyBatis
+                            <br>・HTML,CSS,JS,JQuery
+                            <br>・GitHub,SourceTree
+                        </p>
+
+                    </div>
+                    <a href="portfolio">
+                        <div class="more-button">MORE</div>
+                    </a>
+                </div>
+                <div class="right-image">
+                    <img class="sp-display business-image" src="img/common/portfolio.png" alt="portfolio image">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-primary skills">
+            <div class="pc-flex-container-space-between">
+                <div class="member-text">
+                    <h2 style="margin-left: 5%;">skills&resume</h2>
+                    <div class="contents">
+                        【Experience】
+                        <br>・8 month as QA Engineer (2019/01-2019/09)
+                        <br> ・1.5 years as Java Developer (2019/09-2021/04)
+                        <br>・1 year spring boot (2020-05-2021/04)
+                        <br>【Languages】
+                        <br> ・English (Bisuness level,TOEIC:700)
+                        <br>・Japanese (Bisuness level,JLPT:N2)
+                        <br>【Education】
+                        <br>・ASOIU Bachelor’s Degree in Computer Science (2012/09-2016/07)
+                        <br>・LABO Japanese Language institute (2017/04-2018/12)
+                        <br>【Certificates】
+                        <br>・Oracle Certified Java Programmer, Silver SE 8 (2019/06)
+                        <br>・IELTS 6.5 (2016/04)
+                    </div>
+                    <a href="comingsoon">
+                        <div class="more-button">MORE</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container-primary contact">
+            <h2>contact/follow</h2>
+            <div class="contents">
+                e-mail: hajilov94@gmail.com <br> tel: +817041366090
+            </div>
+            <ul>
+                <li class="github">
+                    <a href="https://github.com/gunnerkh?tab=repositories">
+                        <img class="icon" src="img/common/git-logo.png" alt="github icon">
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/kamil-hajilov-041b6a195/">
+                        <img class="icon" src="img/common/in-logo.png" alt="linkedin icon">
+                    </a>
+                </li>
+                <li class="facebook">
+                    <a href="https://www.facebook.com/hacilov">
+                        <img class="icon" src="img/common/fb-logo.png" alt="fb icon">
+                    </a>
+                </li>
+                <li class="instagram">
+                    <a href="https://www.instagram.com/kmlhjlv/">
+                        <img class="icon" src="img/common/insta-logo.png" alt="instagram logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="l-footer footer">
+        <a href="#" id="tpBtn" class="go-top">
+            <span class="go-text">TOP</span>
+            <span class="triangle"></span>
+        </a>
+
+        <hr>
+        <div class="flex-order">
+            <nav class="footer-menu">
+                <ul class="content-flex-space-between">
+                    <div class="left-items">
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="about">ABOUT</a></li>
+                        <li><a href="portfolio">PORTFOLIO</a></li>
+                        <li><a href="resume">RESUME</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <img src="img/common/dev_logo.png" alt="kamil logo">
+        </div>
+        <small>© 2021 hajilov's</small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

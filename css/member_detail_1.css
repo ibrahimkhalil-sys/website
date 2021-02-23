@@ -1,0 +1,466 @@
+/*****************  ベース  ここから  *****************/
+
+
+/*****************  header向けモジュール  ここから  *****************/
+
+
+/* アイキャッチエリア */
+
+.l-header.header {
+  width: 100%;
+  background-image: none;
+}
+
+.l-header.header .top-visual {
+  background: url("../img/common/eyecatch_member_detail_T.O.png") center right no-repeat;
+  background-size: cover;
+  height: 1040px;
+}
+
+.l-header.header .top-visual .heading-fill {
+  width: 38%;
+  min-width: 550px;
+  background: rgba(255, 255, 255, .9);
+  z-index: 10;
+  margin: 50rem 0rem 0rem 6rem;
+  padding: 1rem 0 2rem 1rem;
+}
+
+.l-header.header .heading-fill .area-job {
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  background: #64B4CD;
+  color: #FBFBFB;
+}
+
+.l-header.header .heading-fill .area-personal-info {
+  margin: 3rem;
+}
+
+.l-header.header .area-personal-info .text-name {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.l-header.header .area-personal-info .text-hire-date {
+  font-size: 1.5rem;
+}
+
+.l-header.header .heading-fill .area-profile {
+  margin: 4rem;
+}
+
+.l-header.header .heading-fill .title-profile {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.l-header.header .heading-fill .flex-container-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.l-header.header .area-profile .item-title {
+  width: 30%;
+}
+
+.l-header.header .area-profile .item-data {
+  width: 70%;
+}
+
+
+/*****************  main向けモジュール  ここから  *****************/
+
+.l-main .container-primary-inner {
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+
+/* 通常のセンテンス */
+
+.l-main .container-primary h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  padding: 0 6.8vw 4rem;
+}
+
+.l-main .container-primary h2 span {
+  padding-bottom: 0.8rem;
+  border-bottom: 3px solid #39AA9A;
+}
+
+
+/* 写真ありのセンテンス */
+
+.l-main .pc-flex-container-space-between h2 {
+  padding: 0 0 4rem 6.8vw;
+}
+
+.l-main .pc-flex-container-space-between .contents {
+  padding: 0 5rem 4rem 6.8vw;
+}
+
+.l-main .pc-flex-container-space-between .content-text {
+  width: 55%;
+  max-width: 800px;
+  margin-left: 10%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.l-main .pc-flex-container-space-between .content-image {
+  width: 45%;
+  max-width: 800px;
+}
+
+
+/* OTHER MEMBERS */
+
+.l-main .member-list {
+  background-color: #F9F9F9;
+}
+
+.l-main .container-primary-inner .tiles .content {
+  width: 100%;
+  display: block;
+  padding-top: 2%;
+  box-sizing: border-box;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 4px 2px 5px -1px rgb(0 0 0 / 20%)
+}
+
+.l-main .container-primary-inner .tiles .content .list-area {
+  width: 100%;
+  background-color: rgba(251, 251, 251, 0.95);
+  padding: 5%;
+  margin: 37% 0 0 0;
+}
+
+.l-main .member-list .container-primary-inner {
+  padding-top: 50px;
+  margin-bottom: 5rem;
+}
+
+.area-job .l-main .container-primary .tiles .content {
+  margin: 10px;
+}
+
+.l-main .container-primary .tiles .area-job {
+  margin: 1rem;
+}
+
+.l-main .tiles .area-job span {
+  display: block;
+  color: #FBFBFB;
+  width: calc(100% / 2);
+  padding: 2%;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-align: center;
+  background: #64B4CD;
+}
+
+.l-main .tiles .area-job.instructor span {
+  background: #A1CF87;
+}
+
+.l-main .tiles .area-job.sales span {
+  background: #8F7AB7;
+}
+
+.l-main .tiles .area-personal-info {
+  margin: 1rem 2rem;
+}
+
+.l-main .area-personal-info .text-name {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.l-main .area-personal-info .text-hire-date {
+  font-size: 1.2rem;
+}
+
+.l-main .tiles .br {
+  display: none;
+}
+
+
+/* MEMBER 画像指定 */
+
+.l-main .tiles .engineer-1 {
+  background-image: url(../img/common/member_icon_T.O.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .engineer-2 {
+  background-image: url(../img/common/member_icon_H.K.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .engineer-3 {
+  background-image: url(../img/common/member_icon_Y.O.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .engineer-4 {
+  background-image: url(../img/common/member_icon_K.K.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .engineer-5 {
+  background-image: url(../img/common/member_icon_Y.A.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .engineer-6 {
+  background-image: url(../img/common/member_icon_A.M.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .engineer-7 {
+  background-image: url(../img/common/member_icon_Y.M.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .school-1 {
+  background-image: url(../img/common/member_icon_S.S.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .school-2 {
+  background-image: url(../img/common/member_icon_S.Y.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.l-main .tiles .sales-1 {
+  background-image: url(../img/common/member_icon_A.S.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/*****************************************************************
+                        タブレット版のための追加設定
+*****************************************************************/
+
+@media screen and (max-width: 1200px) {
+   :root {
+    --header-height: 0;
+  }
+  .l-header.header .top-visual {
+    margin-top: 0px;
+    height: 60.2vw;
+    ;
+    font-size: 5vw;
+  }
+  .l-header.header .top-visual .heading-fill {
+    width: 80%;
+    min-width: 400px;
+    margin: 50% 0 0 10%;
+    padding: 0rem 0 1rem 1rem;
+    background: var(--tone-color);
+  }
+  .l-header.header .area-personal-info .text-name {
+    font-size: 3.5rem;
+  }
+  .l-header.header .heading-fill .area-personal-info {
+    margin: 0 0 0 1rem;
+  }
+  .l-header.header .heading-fill .area-profile {
+    margin: 2rem 0 0 1rem;
+  }
+  .l-header.header .heading-fill .flex-container-items {
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  /* 写真ありのセンテンス */
+  .l-main .intro .container-primary-inner {
+    padding-top: 32rem;
+    padding-bottom: 5rem;
+  }
+  .l-main .container-primary h2 {
+    font-size: 3rem;
+    padding: 0 0 4rem;
+  }
+  .pc-flex-container-space-between {
+    flex-wrap: wrap;
+  }
+  .l-main .pc-flex-container-space-between .content-text {
+    width: 80%;
+    max-width: 100%;
+  }
+  .l-main .pc-flex-container-space-between .content-image {
+    width: 80%;
+    margin: auto;
+  }
+  .l-main .container-primary-inner .tiles .content {
+    margin: 0 0.5rem 1rem 0.5rem;
+  }
+  .l-main .container-primary .contents {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .l-main .tiles .area-job span {
+    width: calc(100% / 1.5);
+    min-width: 75px;
+    box-sizing: border-box;
+  }
+  /*  */
+  .l-main .container-primary .tiles .area-job {
+    margin: 10px;
+  }
+  .l-main .tiles .area-job span {
+    padding: 1rem 0;
+    font-size: 1vw;
+    white-space: nowrap;
+  }
+  .l-main .tiles .area-personal-info {
+    margin: 1rem;
+  }
+  .l-main .area-personal-info .text-name {
+    font-size: calc(10vw / 5);
+  }
+  .l-main .area-personal-info .text-hire-date {
+    font-size: 1rem;
+  }
+  .l-main .tiles .br {
+    display: inline-block;
+  }
+}
+
+
+/*****************************************************************
+                          SP版のための追加設定
+*****************************************************************/
+
+
+/* スマホ縦画面の幅で判定 幅576px以下の場合に適用 */
+
+@media screen and (max-width: 576px) {
+  .l-header.header .top-visual .heading-fill {
+    width: 90%;
+    min-width: auto;
+    padding: 2rem 1rem;
+    margin: 50% auto 0 auto;
+  }
+  .l-main .container-primary-inner {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+  }
+  .l-header.header .heading-fill .area-profile {
+    font-size: 1.3rem;
+  }
+  .l-header.header .heading-fill .flex-container-items {
+    font-size: 1.3rem;
+    flex-direction: column;
+  }
+  .l-header.header .area-profile .item-title {
+    width: 100%;
+  }
+  .l-header.header .area-profile .item-data {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .l-main .member-list .container-primary-inner {
+    width: 60vw;
+    padding-bottom: 5rem;
+  }
+  .l-main .container-primary-inner .content-text {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .l-main .intro .container-primary-inner {
+    padding-top: 37rem;
+    padding-bottom: 5rem;
+  }
+  .main .container-primary.intro h2 {
+    padding-top: 60px;
+  }
+  .l-main .pc-flex-container-space-between .content-text {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  .l-main .pc-flex-container-space-between .content-image {
+    margin-bottom: 5rem;
+  }
+  .main .container-primary h2 {
+    padding-left: 0%;
+    padding-bottom: 3rem;
+  }
+  .l-main .container-primary h2 span {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #39AA9A;
+    line-height: 1.9;
+  }
+  .l-main .heading-decoration {
+    font-size: 2rem;
+  }
+  .main .container-primary.intro .contents {
+    font-size: 1.3rem;
+  }
+  .main .container-primary .contents {
+    padding: 0;
+  }
+  .main .container-primary .profile-contents {
+    padding: 0 5%;
+  }
+  .main .container-primary.intro .page-menu {
+    margin: 60px auto 10px;
+  }
+  .l-main .container-primary.intro .page-menu {
+    font-size: 1.1rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  }
+  .l-main .member-list {
+    margin-top: 5rem;
+  }
+  /*  */
+  .l-main .container-primary .tiles .area-job {
+    margin: 10px;
+  }
+  .l-main .tiles .area-job span {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+  .l-main .tiles .area-personal-info {
+    margin: 1rem;
+  }
+  .l-main .area-personal-info .text-name {
+    font-size: 2rem;
+  }
+  .l-main .area-personal-info .text-hire-date {
+    font-size: 1rem;
+  }
+  .l-main .tiles .br {
+    display: inline-block;
+  }
+}
