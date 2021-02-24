@@ -81,77 +81,359 @@
 
     <main class="l-main main">
 
-        <section id="about" class="container-primary portfolio">
+        <section class="container-primary portfolio">
             <div class="about-text">
 
-                <button class="portfolio-button" onClick="document.getElementById('my-projects').scrollIntoView();">      Projects      </button>
+                <button class="portfolio-button" onClick="document.getElementById('my-projects').scrollIntoView();"> Projects</button>
 
-                <button class="portfolio-button" onClick="document.getElementById('my-projects').scrollIntoView();">Open Source Projects</button>
+                <button class="portfolio-button" onClick="document.getElementById('my-open-source-projects').scrollIntoView();">Open Source Projects</button>
 
             </div>
         </section>
+        <div id="my-projects" style="margin-bottom: 10%;"></div>
 
-        <section id="my-projects" class="container-primary skills">
-            <div class="pc-flex-container-space-between">
-                <img class="pc-display portfolio-image" src="img/common/portfolio.png" alt="">
-                <div class="portfolio-text">
-                    <h2>portfolio</h2>
-                    <div class="contents">
-                        Since joining WonderTree, I have been involved in the following projects.
+        <section class="container-primary my-projects">
+            <div class="portfolio-title">
+                <h2>my projects</h2>
+            </div>
+            <div class="contents">
+                <div class="my-projects-left-content">
 
-                        <p>
-                            Example 1:
-                            <br>【Overview】
-                            <br>Development of ordering system for retail companies
-                            <br>【I did】
-                            <br>・Development from zero
-                            <br>・ Screen repair and batch repair related to ordering
-                            <br>・ Creating test specifications
-                            <br>・ Unit test
-                            <br>【Environment】
-                            <br>・Java,Spring boot
-                            <br>・SQL,MyBatis
-                            <br>・HTML,CSS,JS,JQuery
-                            <br>・GitHub,SourceTree
-                        </p>
+                    <p>
+                        <h3> Project 1:</h3>
+                        <br>【Overview】
+                        <br> Development,QA tasks.
+                        <br> Checking if the product complies with the requirements.
 
-                    </div>
-                    <a href="portfolio">
-                        <div class="more-button">MORE</div>
-                    </a>
+                        <br> 【Work content】
+                        <br>■ Digital signature app
+                        <br> ・ QA test
+                        <br>・ Test case creation
+                        <br>・ App design
+                        <br>・ JIRA ticket system management
+
+                        <br> ■ SQL development tool app
+                        <br>・ QA test
+                        <br>・ Installation test
+                        <br> ・ Integration test
+                        <br>・ Test case creation
+                        <br> ・ App design
+                        <br>・ JIRA ticket system management
+                        <br>・ SQL query editing
+                        <br> ・ Test automation (shell script)
+
+                        <br> ■ Data transmission app
+                        <br> ・ QA test
+                        <br> ・Installation test
+                        <br> ・ Test case creation
+                        <br> ・ JIRA ticket system management
+                        <br>【Environment】
+                        <br>・Java,Spring boot
+                        <br>・MySql,MsSql
+                        <br>・shell script
+                        <br>・Ubuntu,RHEL
+                        <br>・Jira
+                        <br>・GitHub
+                    </p>
                 </div>
-                <div class="right-image">
-                    <img class="sp-display business-image" src="img/common/portfolio.png" alt="portfolio image">
+                <div class="my-projects-right-content">
+                    <p>
+                        <h3> プロジェクト 1:</h3>
+                        <br>【概要】
+                        <br>通信業者様の製品評価テスト業務
+                        <br>【担当業務】
+                        <br>■デジタル署名アプリ
+                        <br>・単体テスト
+                        <br>・テストケース作成
+                        <br>・アプリデザイン
+                        <br>・JIRAチケットシステム管理
+                        <br>■SQL開発ツールアプリ
+                        <br>・単体テスト
+                        <br>・インストレーションテスト
+                        <br>・インテグレーションテスト
+                        <br>・テストケース作成
+                        <br>・アプリデザイン
+                        <br>・JIRAチケットシステム管理
+                        <br>・SQL編集
+                        <br>・テスト自動化（shell script）
+                        <br>■データ送信アプリ
+                        <br>・単体テスト
+                        <br>・インストレーションテスト
+                        <br>・テストケース作成
+                        <br>・JIRAチケットシステム管理
+                        <br>【環境】
+                        <br>・Java,Spring boot
+                        <br>・MySql,MsSql
+                        <br>・shell script
+                        <br>・Ubuntu,RHEL
+                        <br>・Jira
+                        <br>・GitHub
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container-primary my-projects">
+
+            <div class="contents">
+                <div class="my-projects-left-content">
+
+                    <p>
+                        <h3> Project 2:</h3>
+                        <br>【Overview】
+                        <br>Development of ordering system for retail company
+                        <br>【I did】
+                        <br>・Development from zero
+                        <br>・ Screen repair and batch repair related to ordering
+                        <br>・ Creating test specifications
+                        <br>・ Unit test
+                        <br>【Environment】
+                        <br>・Java,Spring boot
+                        <br>・SQL,MyBatis
+                        <br>・HTML,CSS,JS
+                        <br>・GitHub,SourceTree
+                    </p>
+                </div>
+                <div class="my-projects-right-content">
+                    <p>
+                        <h3> プロジェクト 2:</h3>
+                        <br>【概要】
+                        <br> アパレル会社様向けの受発注システム開発
+                        <br>【担当業務】
+                        <br>・受発注に関する画面改修とバッチの改修
+                        <br> ・テスト仕様書作成
+                        <br> ・単体テスト
+                        <br>【環境】
+                        <br>・Java,Spring boot
+                        <br>・SQL,MyBatis
+                        <br>・HTML,CSS,JS,JQuery
+                        <br>・GitHub,SourceTree
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container-primary my-projects">
+
+            <div class="contents">
+                <div class="my-projects-left-content">
+
+                    <p>
+                        <h3> Project 3:</h3>
+                        <br> 【Overview】
+                        <br> Creating IT training materials for trainers
+                        <br> 【I did】
+                        <br>■Creating a collection of SQL questions for trainers
+                        <br>■Creating HTML / CSS teaching materials
+                        <br>・Create a system that can be viewed on the web
+                        <br> ・ HLML / CSS repair
+                        <br>【Environment】
+                        <br>・Java
+                        <br>・MySQL
+                        <br>・HTML,CSS,JS,
+                        <br>JQuery
+                        <br>・GitHub,SourceTree
+
+                    </p>
+                </div>
+                <div class="my-projects-right-content">
+                    <p>
+                        <h3> プロジェクト 3:</h3>
+                        <br>【概要】
+                        <br>■IT会社向け情報収集WEBアプリ開発
+                        <br>【担当業務】
+                        <br>・製造
+                        <br>・単体テスト
+                        <br>■研修用のSQL問題集の作成
+                        <br>■HTML・CSS教材作成
+                        <br>・ウェブ上で閲覧できるシステム作成
+                        <br>・HLML/CSS改修
+                        <br>【Environment】
+                        <br>・Java
+                        <br>・MySQL
+                        <br>・HTML,CSS,JS,
+                        <br>JQuery
+                        <br>・GitHub,SourceTree
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="container-primary skills">
-            <div class="pc-flex-container-space-between">
-                <div class="member-text">
-                    <h2 style="margin-left: 5%;">skills&resume</h2>
-                    <div class="contents">
-                        【Experience】
-                        <br>・8 month as QA Engineer (2019/01-2019/09)
-                        <br> ・1.5 years as Java Developer (2019/09-2021/04)
-                        <br>・1 year spring boot (2020-05-2021/04)
-                        <br>【Languages】
-                        <br> ・English (Bisuness level,TOEIC:700)
-                        <br>・Japanese (Bisuness level,JLPT:N2)
-                        <br>【Education】
-                        <br>・ASOIU Bachelor’s Degree in Computer Science (2012/09-2016/07)
-                        <br>・LABO Japanese Language institute (2017/04-2018/12)
-                        <br>【Certificates】
-                        <br>・Oracle Certified Java Programmer, Silver SE 8 (2019/06)
-                        <br>・IELTS 6.5 (2016/04)
-                    </div>
-                    <a href="comingsoon">
-                        <div class="more-button">MORE</div>
-                    </a>
+        <div id="my-open-source-projects" style="margin-bottom: 10%;"></div>
+
+        <section class="container-primary my-projects">
+            <div class="portfolio-title">
+                <h2 style="margin-left: -18%;">my open source projects</h2>
+            </div>
+            <div class="contents">
+                <div class="my-projects-left-content">
+
+                    <p>
+                        <h3> Project 1:</h3>
+                        <br>【Overview】
+                        <br>Web Application with mybatis mapper which clients can sell product or buy one.
+                        <br>【I did】
+                        <br>・Creation of detailed diagram
+                        <br>・Development from zero
+                        <br>・ Creating test specifications
+                        <br>【Environment】
+                        <br>・Java,Spring boot
+                        <br>・MySQL,MyBatis
+                        <br>・HTML,CSS,JS
+                        <br>・GitHub
+                    </p>
                 </div>
+                <div class="my-projects-right-content">
+                    <p>
+                        <h3> プロジェクト 1:</h3>
+                        <br>【概要】
+                        <br> 受発注システム開発
+                        <br>【担当業務】
+                        <br> ・詳細設計書作成
+                        <br>・受発注に関する画面改修とバッチの改修
+                        <br> ・テスト仕様書作成
+                        <br>【環境】
+                        <br>・Java,Spring boot
+                        <br>・SQL,MyBatis
+                        <br>・HTML,CSS,JS,JQuery
+                        <br>・GitHub
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-link">
+                <a href="https://github.com/gunnerkh/kamilhajilov_website" style="color: blue;">Click to check out source →</a>
+            </div>
+        </section>
+        <section class="container-primary my-projects">
+
+            <div class="contents">
+                <div class="my-projects-left-content">
+
+                    <p>
+                        <h3> Project 2:</h3>
+                        <br>【Overview】
+                        <br>Development of a system that gathers information from websites that can be useful for recruiters.
+                        <br>【I did】
+                        <br>・Development
+                        <br>・ Unit test
+                        <br>【Environment】
+                        <br>・Java
+                        <br>・Excell
+                        <br>・GitHub
+                    </p>
+                </div>
+                <div class="my-projects-right-content">
+                    <p>
+                        <h3> プロジェクト 2:</h3>
+                        <br>【概要】
+                        <br> 情報収集WEBアプリ開発
+                        <br>【担当業務】
+                        <br>・製造
+                        <br> ・単体テスト
+                        <br>【環境】
+                        <br>・Java
+                        <br>・Excell
+                        <br>・GitHub
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-link">
+                <a href="https://github.com/gunnerkh/kamilhajilov_website" style="color: blue;">Click to check out source →</a>
+            </div>
+        </section>
+        <section class="container-primary my-projects">
+            <div class="contents">
+                <div class="my-projects-left-content">
+
+                    <p>
+                        <h3> Project 3:</h3>
+                        <br>【Overview】
+                        <br> Web site
+                        <br>【I did】
+                        <br>・Development from zero
+                        <br>・ Screen repair and batch repair related to ordering
+                        <br>【Environment】
+                        <br>・HTML,CSS,JS
+                        <br>・GitHub,SourceTree
+                    </p>
+                </div>
+                <div class="my-projects-right-content">
+                    <p>
+                        <h3> プロジェクト 3:</h3>
+                        <br>【概要】
+                        <br> 個人ウェブサイト
+                        <br>【担当業務】
+                        <br>・受発注に関する画面改修とバッチの改修
+                        <br>【環境】
+                        <br>・HTML,CSS,JS
+                        <br>・GitHub,SourceTree
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-link">
+                <a href="https://github.com/gunnerkh/kamilhajilov_website" style="color: blue;">Click to check out source →</a>
             </div>
         </section>
 
+        <section class="container-primary my-projects">
+            <div class="contents">
+                <div class="my-projects-left-content">
+
+                    <p>
+                        <h3> Project 4:</h3>
+                        <br>【Overview】
+                        <br> Rock/Paper/Scrissors game with Japanese grico rules.
+                        <br>【I did】
+                        <br>・Development from zero
+                        <br>【Environment】
+                        <br>・Java
+                        <br>・GitHub
+                    </p>
+                </div>
+                <div class="my-projects-right-content">
+                    <p>
+                        <h3> プロジェクト 4:</h3>
+                        <br>【概要】
+                        <br> じゃんけんぽんゲーム（グリコ）
+                        <br>【担当業務】
+                        <br>・開発
+                        <br>【環境】
+                        <br>・Java
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-link">
+                <a href="https://github.com/gunnerkh/Rock-Paper-ScrissorsGame" style="color: blue;">Click to check out source →</a>
+            </div>
+        </section>
+        <section class="container-primary my-projects">
+            <div class="contents">
+                <div class="my-projects-left-content">
+                    <p>
+                        <h3> Project 5:</h3>
+                        <br>【Overview】
+                        <br> SchoolManagementSystem(console app)
+                        <br>【I did】
+                        <br>・Development from zero
+                        <br>【Environment】
+                        <br>・Java
+                        <br>・GitHub
+                    </p>
+                </div>
+                <div class="my-projects-right-content">
+                    <p>
+                        <h3> プロジェクト 5:</h3>
+                        <br>【概要】
+                        <br> 学生管理システム
+                        <br>【担当業務】
+                        <br>・開発
+                        <br>【環境】
+                        <br>・Java
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-link">
+                <a href="https://github.com/gunnerkh/SchoolManagementSystem" style="color: blue;">Click to check out source →</a>
+            </div>
+        </section>
         <section id="contact" class="container-primary contact">
             <h2>contact/follow</h2>
             <div class="contents">

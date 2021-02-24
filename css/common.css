@@ -325,6 +325,11 @@ a {
     background: url("../img/common/about_bg.png") center center no-repeat;
 }
 
+.main .container-primary.portfolio-about {
+    padding: 10rem 7.3vw 5rem;
+    color: rgb(14, 3, 3);
+}
+
 .main .container-primary .contents {
     margin: 0 auto;
     padding: 0 6.8vw;
@@ -351,6 +356,11 @@ a {
 .container-primary.portfolio .portfolio-image {
     margin-left: -40px;
     width: 35%;
+}
+
+.container-primary.portfolio-about .portfolio-image {
+    margin-left: -40px;
+    width: 100%;
 }
 
 .container-primary.portfolio .portfolio-text {
@@ -404,7 +414,7 @@ a {
 /*contact area*/
 
 .main .container-primary.contact {
-    padding-top: 10rem;
+    padding-top: 12rem;
     text-align: center;
 }
 
@@ -780,7 +790,7 @@ a {
 
 @media screen and (max-width: 576px) {
     body {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.5;
     }
     /*****************  テーマ汎用　ここから  *****************/
@@ -826,7 +836,7 @@ a {
         line-height: 1.5rem;
     }
     .l-header .mini-menu .header-image {
-        width: 35px;
+        width: 30px;
         height: 35px;
         margin-right: calc(0.5vw + 0.1rem);
     }
@@ -873,13 +883,13 @@ a {
     .l-header.header {
         position: relative;
         background: url("../img/common/eyecatch-kamil.jpg") center center / cover no-repeat;
-        max-width: 100vw;
-        width: 100vw;
+        max-width: 100%;
+        width: 100%;
     }
     .l-header.header .top-visual {
         background: none;
-        width: 100vw;
-        height: 514px;
+        width: 80%;
+        height: 40rem;
     }
     .l-header.header .top-visual .catch-copy {
         margin: 0 20px;
@@ -906,12 +916,6 @@ a {
         border-left: solid 1px #bbb;
     }
     /*****************  main向けモジュール　ここから  *****************/
-    /* NEWSエリア */
-    .container-primary.news {
-        margin: 16.9vw 7vw;
-        line-height: initial;
-        font-size: 11px;
-    }
     .container-primary.news .info-headline {
         margin-bottom: 10px;
         font-size: 1.8rem;
@@ -923,8 +927,7 @@ a {
     .main .container-primary h2 {
         padding-left: 10%;
         padding-bottom: 2rem;
-        padding-top: 6rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .main .container-primary .contents {
         line-height: 2.5rem;
@@ -942,7 +945,8 @@ a {
     }
     /* ABOUTエリア */
     .main .container-primary.about {
-        padding: 20px 0 40px;
+        padding-top: -10%;
+        padding: 0px 0 40px;
         color: #fff;
         width: 100vw;
         background: url("../img/common/about_bg.png") center center no-repeat;

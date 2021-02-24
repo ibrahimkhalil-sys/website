@@ -45,130 +45,6 @@
     background: #fff;
 }
 
-.l-main .member-list {
-    background-color: #F9F9F9;
-    width: 80%;
-    margin-left: 10%;
-}
-
-
-/* OTHER MEMBERS */
-
-.l-main .member-list {
-    background-color: #F9F9F9;
-}
-
-.l-main .container-primary-inner .tiles .content {
-    width: 100%;
-    display: block;
-    padding-top: 2%;
-    box-sizing: border-box;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 2rem;
-    box-shadow: 4px 2px 5px -1px rgb(0 0 0 / 20%)
-}
-
-.l-main .container-primary-inner .tiles .content .list-area {
-    width: 100%;
-    background-color: rgba(251, 251, 251, 0.95);
-    padding: 5%;
-    margin: 37% 0 0 0;
-}
-
-.l-main .member-list .container-primary-inner {
-    padding-top: 50px;
-    margin-bottom: 5rem;
-}
-
-.area-job .l-main .container-primary .tiles .content {
-    margin: 10px;
-}
-
-.l-main .container-primary .tiles .area-job {
-    margin: 1rem;
-}
-
-.l-main .tiles .area-personal-info {
-    margin: 1rem 2rem;
-}
-
-.l-main .area-personal-info .text-name {
-    font-size: 3rem;
-    font-weight: 400;
-}
-
-.l-main .area-personal-info .text-hire-date {
-    font-size: 1.2rem;
-}
-
-.l-main .tiles .br {
-    display: none;
-}
-
-
-/* MEMBER 画像指定 */
-
-.l-main .tiles .image-1 {
-    background-image: url(../img/common/image-kamil-1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-2 {
-    background-image: url(../img/common/image-kamil-2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-3 {
-    background-image: url(../img/common/image-kamil-3.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-4 {
-    background-image: url(../img/common/image-kamil-4.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-5 {
-    background-image: url(../img/common/image-kamil-5.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-6 {
-    background-image: url(../img/common/image-kamil-6.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-7 {
-    background-image: url(../img/common/image-kamil-7.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-8 {
-    background-image: url(../img/common/image-kamil-8.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-9 {
-    background-image: url(../img/common/image-kamil-9.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.l-main .tiles .image-10 {
-    background-image: url(../img/common/image-kamil-10.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 
 /*****************************************************************
                         タブレット版のための追加設定
@@ -212,11 +88,6 @@
     body {
         font-size: 2rem;
         line-height: 1.5;
-    }
-    .l-main .member-list {
-        background-color: #F9F9F9;
-        width: 80%;
-        margin-left: 10%;
     }
 }
 
@@ -268,10 +139,5 @@
     body {
         font-size: 1rem;
         line-height: 1.5;
-    }
-    .l-main .member-list {
-        background-color: #F9F9F9;
-        width: 60%;
-        margin-left: 15%;
     }
 }

@@ -29,6 +29,8 @@
     <link href="css/reset.css" rel="stylesheet">
     <!-- CSS -->
     <link href="css/common.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -76,8 +78,7 @@
         <div class="top-visual">
             <div class="catch-copy">
                 こんにちは、カミルです。<br class="sp-display">私のポートフォリオへ、ようこそ！<br>
-                <span class="en-text">Hello,&nbsp;I'm Kamil.&nbsp;I'm&nbsp;a&nbsp;full-stack&nbsp;developer.</span>
-                <button class="see-more-button" onClick="document.getElementById('about').scrollIntoView();">more about me</button>
+                <span class="en-text">Hello,&nbsp;I'm Kamil.&nbsp;I'm&nbsp;a&nbsp;full-stack&nbsp;developer.Please,scroll down to see more.</span>
 
             </div>
             <a href="#about-area" class="vertical">scroll</a>
@@ -111,9 +112,11 @@
             </div>
         </section>
 
-        <section class="container-primary portfolio">
+        <section class="container-primary portfolio-about">
             <div class="pc-flex-container-space-between">
-                <img class="pc-display portfolio-image" src="img/common/portfolio.png" alt="">
+                <div class="portfolio-imag">
+                    <img class="pc-display portfolio-image" src="img/common/portfolio.png" alt="">
+                </div>
                 <div class="portfolio-text">
                     <h2>portfolio</h2>
                     <div class="contents">
