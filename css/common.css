@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*****************  ベース　ここから  *****************/
+/*****************  base part  *****************/
 
 html {
     font-size: 62.5%;
@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    font-family: "Lato", "Noto Sans JP", "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     width: 100%;
     line-height: 1.8;
     /* 22px */
@@ -100,18 +99,6 @@ a {
     align-items: center;
 }
 
-.pc-flex-container-space-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.pc-flex-container-start {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 
 /*****************  header向けモジュール　ここから  *****************/
 
@@ -142,6 +129,16 @@ a {
 .l-header .fixed-menu .header-copy {
     padding: 0.9vw;
     font-size: 1.6vw;
+    line-height: 1.6vw;
+    font-style: italic;
+    transform: scale(0.88, 1);
+}
+
+.l-header .fixed-menu .text-logo {
+    margin-top: 2rem;
+    margin-left: -23rem;
+    padding: 0.9vw;
+    font-size: 1vw;
     line-height: 1.6vw;
     font-style: italic;
     transform: scale(0.88, 1);
@@ -250,10 +247,10 @@ a {
 .l-header.header .top-visual {
     position: relative;
     margin-top: var(--header-height);
-    background: url("../img/common/eyecatch-kamil.jpg") center center no-repeat;
+    background: url("../img/common/eyecatch-top.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 120rem;
+    height: 50rem;
 }
 
 .l-header.header .top-visual .catch-copy {
@@ -320,6 +317,14 @@ a {
 }
 
 .main .container-primary.portfolio {
+    display: block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #fff;
+    background: url("../img/common/about_bg.png") center center no-repeat;
+}
+
+.main .container-primary.resume {
     padding: 10rem 7.3vw 5rem;
     color: #fff;
     background: url("../img/common/about_bg.png") center center no-repeat;
@@ -344,14 +349,19 @@ a {
     color: var(--base-color);
 }
 
+.see-more-button {
+    background-color: rgb(36, 182, 240);
+    font-size: 1.6rem;
+}
+
+.contact-button {
+    background-color: rgb(16, 17, 17);
+    font-size: 2rem;
+    color: #fff;
+}
+
 
 /* portfolioエリア */
-
-.container-primary.portfolio .portfolio-button {
-    width: 40rem;
-    margin-top: -10rem;
-    margin-left: 19rem;
-}
 
 .container-primary.portfolio .portfolio-image {
     margin-left: -40px;
@@ -361,11 +371,6 @@ a {
 .container-primary.portfolio-about .portfolio-image {
     margin-left: -40px;
     width: 100%;
-}
-
-.container-primary.portfolio .portfolio-text {
-    width: 65%;
-    margin: 5rem 7.3vw 5rem 4.7vw;
 }
 
 .container-primary.portfolio .portfolio-text .contents {
@@ -559,17 +564,6 @@ a {
     border-style: solid;
     border-width: 0 1rem 1.73rem 1rem;
     border-color: transparent transparent var(--base-color) transparent;
-}
-
-.see-more-button {
-    background-color: rgb(36, 182, 240);
-    font-size: 1.6rem;
-}
-
-.contact-button {
-    background-color: rgb(16, 17, 17);
-    font-size: 2rem;
-    color: #fff;
 }
 
 
@@ -775,6 +769,30 @@ a {
     .container-primary.contact ul .lead-sentence {
         margin-top: 30px;
     }
+    .main .container-primary.resume {
+        padding: 10rem 7.3vw 5rem;
+        color: #fff;
+        background: url("../img/common/about_bg.png") center center no-repeat;
+    }
+    .main .container-primary.about {
+        font-size: 1.8rem;
+        margin-top: -31%;
+        padding: 10rem 7.3vw 5rem;
+        color: #fff;
+        background: url("../img/common/about_bg.png") center center no-repeat;
+    }
+    .main .container-primary.about .contents {
+        margin-top: 14%;
+    }
+    .main .container-primary .more-button {
+        margin: 40px auto;
+        padding: 17px;
+        width: 220px;
+        font-size: 1.8rem;
+        font-style: italic;
+        letter-spacing: 0rem;
+        text-align: center;
+    }
 }
 
 
@@ -882,13 +900,13 @@ a {
     /* アイキャッチエリア */
     .l-header.header {
         position: relative;
-        background: url("../img/common/eyecatch-kamil.jpg") center center / cover no-repeat;
+        background: url("../img/common/eyecatch-top.jpg") center center / cover no-repeat;
         max-width: 100%;
         width: 100%;
     }
     .l-header.header .top-visual {
         background: none;
-        width: 80%;
+        width: 70%;
         height: 40rem;
     }
     .l-header.header .top-visual .catch-copy {
@@ -975,10 +993,6 @@ a {
         margin-left: inherit;
         max-width: 30rem;
     }
-    .container-primary.portfolio .about-text {
-        margin-bottom: 0;
-        padding: 0 5%;
-    }
     .container-primary.portfolio .right-image {
         text-align: right;
     }
@@ -988,24 +1002,6 @@ a {
     }
     .container-primary.portfolio .portfolio-text .more-button {
         max-width: 220px;
-    }
-    /*MEMBERエリア*/
-    .main .container-primary.member {
-        padding-top: 0px;
-        padding-left: 0px;
-        min-height: 414px;
-    }
-    .main .container-primary.member .member-text {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .main .container-primary.member img {
-        width: 50%;
-        max-width: 55%;
-    }
-    .main .container-primary.member .more-button {
-        margin: 40px auto;
     }
     /*contact area*/
     .main .container-primary.contact {
@@ -1044,6 +1040,9 @@ a {
     }
     .container-primary.contact ul .lead-sentence {
         margin-top: 30px;
+    }
+    .main .container-primary.about .contents {
+        margin-top: 35%;
     }
     /*****************  footer向けモジュール　ここから  *****************/
     /* ボタン */

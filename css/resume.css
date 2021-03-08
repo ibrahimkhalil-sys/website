@@ -11,10 +11,21 @@
 .l-header.header .top-visual {
     position: relative;
     margin-top: var(--header-height);
-    background: url("../img/common/eyecatch-about.jpg") center center no-repeat;
+    background: url("../img/common/anime.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 60rem;
+}
+
+.resume-button {
+    margin: 1rem 21rem;
+    font-weight: 60rem;
+    text-transform: uppercase;
+    padding: 1.25em 3em;
+    border: 2px solid;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
 .l-header.header .top-visual .catch {
@@ -27,11 +38,13 @@
 }
 
 .l-header.header .top-visual .catch-copyabout {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    color: black;
     position: absolute;
     margin: 10rem;
-    top: 1%;
-    left: 30%;
-    font-size: 3rem;
+    top: -5%;
+    font-size: 2rem;
+    margin-right: 40%;
 }
 
 
@@ -45,6 +58,15 @@
     background: #fff;
 }
 
+.pdf-container {
+    height: 120rem;
+    width: 80rem;
+}
+
+.my-projects-right-content {
+    margin-left: 40%;
+}
+
 
 /*****************************************************************
                         タブレット版のための追加設定
@@ -53,12 +75,21 @@
 @media screen and (max-width: 1200px) {
     /* ページ内遷移ずれ防止、前のコンテンツの末尾にdivとして埋め込む */
     .l-header.header .top-visual {
-        background: url("../img/common/eyecatch-about.jpg") center center no-repeat;
+        position: relative;
+        margin-top: var(--header-height);
+        background: url("../img/common/anime.jpg") center center no-repeat;
         background-size: cover;
-        height: 55rem;
+        width: 100%;
+        height: 40rem;
     }
-    .l-header.header .top-visual .catch {
-        font-size: 2rem;
+    .l-header.header .top-visual .catch-copyabout {
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        color: black;
+        position: absolute;
+        margin: 0rem;
+        top: 10%;
+        font-size: 1.5rem;
+        margin-right: 40%;
     }
     .main .container-primary-inner {
         width: 90%;
@@ -85,9 +116,20 @@
         width: 100%;
         background: #fff;
     }
+    .main .container-primary .my-projects {
+        margin-top: -11%;
+        width: 100%;
+        background: #fff;
+    }
     body {
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 1.5;
+    }
+    .my-projects-right-content {
+        margin-left: 0%;
+    }
+    .resume-button {
+        margin-top: 10%;
     }
 }
 
@@ -104,33 +146,32 @@
 
 @media screen and (max-width: 576px) {
     /*****************  header向けモジュール  ここから  *****************/
-    .l-header.header .top-visual {
-        background: url("../img/common/eyecatch-about.jpg") center center no-repeat;
+    .l-header.header {
+        background: url("../img/common/anime.jpg") center center no-repeat;
         background-size: cover;
+        width: 100%;
+        max-width: 100%;
         height: 25rem;
     }
-    .l-header.header .top-visual .catch {
-        font-size: 1.2rem;
+    .l-header.header .top-visual {
+        width: 100%;
+        height: 40rem;
     }
-    .main .container-primary-inner {
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 0px;
-        padding-bottom: 10px;
+    .main .container-primary.resume {
+        margin-top: 0px;
+        padding-right: 100px;
+        color: #fff;
+        background: #fff;
     }
-    /* コンテンツエリア共通パーツカスタム */
-    .main .container-primary h2 {
-        padding-left: 0%;
-    }
-    .main .container-primary .contents {
-        padding: 0 5%;
-    }
-    /* イントロ */
-    .main .container-primary.intro h2 {
-        padding-top: 60px;
-    }
-    .main .container-primary.intro .contents {
-        font-size: 1.2rem;
+    .l-header.header .top-visual .catch-copyabout {
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        color: black;
+        margin: 1rem;
+        top: -18%;
+        margin-top: 15%;
+        font-size: 1rem;
+        margin-right: 10%;
+        margin-left: 10%;
     }
     .main .container-primary {
         width: 70%;
@@ -139,5 +180,45 @@
     body {
         font-size: 1rem;
         line-height: 1.5;
+    }
+    .l-main .member-list {
+        background-color: #F9F9F9;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    .resume-button {
+        margin: 2rem 2rem 2rem;
+        font-weight: 60rem;
+        text-transform: uppercase;
+        border: 2px solid;
+        border-radius: 0.75em;
+        transform-style: preserve-3d;
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+    .main .container-primary.intro .contents {
+        font-size: 1.2rem;
+    }
+    .main .container-primary-inner {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .l-header.header .top-visual {
+        background: none;
+        width: 80%;
+        height: 40rem;
+    }
+    .main .container-primary.my-projects {
+        width: 100%;
+        background: #fff;
+    }
+    .pdf-container {
+        height: 70rem;
+        width: 35rem;
+    }
+    .my-projects-right-content {
+        margin-left: 10%;
     }
 }

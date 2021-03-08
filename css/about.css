@@ -14,7 +14,7 @@
     background: url("../img/common/eyecatch-about.jpg") center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 60rem;
+    height: 45rem;
 }
 
 .l-header.header .top-visual .catch {
@@ -210,13 +210,14 @@
         background: #fff;
     }
     body {
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 1.5;
     }
     .l-main .member-list {
         background-color: #F9F9F9;
         width: 80%;
         margin-left: 10%;
+        margin-top: 20%;
     }
 }
 
@@ -233,19 +234,28 @@
 
 @media screen and (max-width: 576px) {
     /*****************  header向けモジュール  ここから  *****************/
-    .l-header.header .top-visual {
+    .l-header.header {
         background: url("../img/common/eyecatch-about.jpg") center center no-repeat;
         background-size: cover;
+        width: 100%;
+        max-width: 100%;
         height: 25rem;
     }
     .l-header.header .top-visual .catch {
-        font-size: 1.2rem;
+        color: #fff;
+        font-size: 0rem;
+        padding-bottom: 100px;
     }
     .main .container-primary-inner {
         width: 90%;
         margin: 0 auto;
         padding-top: 0px;
         padding-bottom: 10px;
+    }
+    .l-header.header .top-visual {
+        background: none;
+        width: 80%;
+        height: 40rem;
     }
     /* コンテンツエリア共通パーツカスタム */
     .main .container-primary h2 {
@@ -262,7 +272,7 @@
         font-size: 1.2rem;
     }
     .main .container-primary {
-        width: 70%;
+        width: 100%;
         background: #fff;
     }
     body {
@@ -272,6 +282,14 @@
     .l-main .member-list {
         background-color: #F9F9F9;
         width: 60%;
-        margin-left: 15%;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    .l-header.header .top-visual .catch-copyabout {
+        position: absolute;
+        margin: 1rem;
+        top: 200px;
+        left: 30%;
+        font-size: 0rem;
     }
 }

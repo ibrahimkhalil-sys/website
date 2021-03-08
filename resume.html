@@ -1,19 +1,7 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="English">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHDZ8B41L8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-KHDZ8B41L8');
-    </script>
 
     <title>hajilov's</title>
     <meta charset="utf-8">
@@ -33,7 +21,6 @@
     <link href="lib/slick/slick.css" rel="stylesheet">
     <link href="lib/slick/slick-theme.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
@@ -43,7 +30,8 @@
         <div class="content-flex-space-between fixed-menu">
             <a href="/index" class="header-logo">
                 <img class="header-image" src="img/common/kamil-logo.png" alt="kamil logo">
-                <h1 class="header-copy">Kamil <br> Hajilov <br> <br> jr. full-stack developer</h1>
+                <h1 class="header-copy">Kamil <br> Hajilov</h1>
+                <h1 class="text-logo"> <br> <br> jr. full-stack developer</h1>
             </a>
             <nav class="pc-display">
                 <ul class="header-menu">
@@ -76,7 +64,7 @@
         </div>
         <div class="top-visual">
             <div class="catch-copyabout">
-                <span class="en-text">Thanks for visiting&nbsp;this page.&nbsp;Please&nbsp;scroll down&nbsp;to discover more.</span> <br>このページにアクセスしていただきありがとうございます。 <br class="sp-display">詳細については、下にスクロールしてください。<br>
+                Thank you for visiting&nbsp;this page.&nbsp;Please&nbsp;scroll down&nbsp;to see resume. <br>To check out projects or source, please visit PORTFOLIO page.<br>このページにアクセスしていただきありがとうございます。 <br class="sp-display">履歴書を見るために、下にスクロールしてください。<br>また、プロジェクトやソースをチェックしたい場合は「PORTFOLIO」画面へ移動ください。
 
             </div>
             <a href="#about-area" class="vertical">scroll</a>
@@ -84,28 +72,38 @@
     </header>
 
     <main class="l-main main">
-        <section id="about" class="container-primary about">
+        <section class="container-primary resume">
             <div class="about-text">
-                <h2>who am I</h2>
-                <div class="contents">
 
-                    <p>
-                        私は、ハジロフカミルと言います。2016年にコンピュータサイエンスの専門を卒業しました。 2017年にアゼルバイジャンから参りました。2017年4月より2018年12月まで、LABO日本語教育研修所でで日本語を学びました。 2019年1月よりWonderTreeの一員として勤務しております。
-                        <br> <br>私の長所は、構造的に道筋を立てて物事を分析することができる点です。また、数学的な知識を用いてソフトウェアとハードウェアを結びつけるように処理する能力にも自信があります。
-                        <br> こういった思考方法やITに対する高い関心は中学時代に参加した数学オリンピックに原点を求めることができます。そこで出題されたアルゴリズムについて考えさせる問題に取り組んだ際に、コンピューター、特にプログラミングに対して非常に興味を持ちました。
-                        <br><br> いくつの趣味がありますが一つは、自然と一体になり、目の前にある「波」に集中し続けることです。もう1つはサッカーをしたり見たりすることであり、イギリスのアルセナールというクラブを応援しています。
-                    </p>
-                    <p>My name is Hajilov Kamil. I graduated from the computer science specialty in 2016. I came from Azerbaijan in 2017. From April 2017 to December 2018, I studied Japanese at the LABO Japanese Language Education and Training Institute.
-                        I have been working as a member of Wonder Tree since January 2019.
-                        <br> <br> My strength is that I can structurally follow the path and analyze things. I am also confident in my ability to use mathematical knowledge to process software and hardware together. This way of thinking and high interest
-                        in IT can be traced back to the Mathematical Olympiad that participated in junior high school. I was very interested in computers, especially programming when I tackled the problem that made me think about the algorithms which
-                        were asked there.
-                        <br><br>I have several hobbies, and one is to go to see nature and stay focused on the waves in front of me. The other one is to play and watch football . I am a big fan of Arsenal fc :)
-                    </p>
+                <button class="resume-button" onClick="document.getElementById('resume-jap').scrollIntoView();"> 履歴書を見る</button>
 
+                <button class="resume-button" onClick="document.getElementById('resume-eng').scrollIntoView();">RESUME</button>
+
+            </div>
+        </section>
+        <div id="my-projects" style="margin-bottom: 10%;"></div>
+
+        <section class="container-primary my-projects">
+            <div class="portfolio-title">
+            </div>
+            <div class="contents">
+                <div id="resume-jap" class="my-projects-left-content">
+
+                    <p style="margin-bottom: 10%;">
+                        <h2> 履歴書</h2>
+                    </p>
+                    <embed class="pdf-container" src="img/common/Kamil_HAJILOV_JapResumeCv.pdf" />
+
+                </div>
+                <div id="resume-eng" class="my-projects-right-content">
+                    <p style="margin-bottom: 10%;">
+                        <h2> resume </h2>
+                    </p>
+                    <embed class="pdf-container" src="img/common/EnglishResume__kamilhajilov (1).pdf" />
                 </div>
             </div>
         </section>
+
 
         <section id="contact" class="container-primary contact">
             <h2>contact/follow</h2>
@@ -148,7 +146,7 @@
             <nav class="footer-menu">
                 <ul class="content-flex-space-between">
                     <div class="left-items">
-                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="/index">TOP</a></li>
                         <li><a href="portfolio">PORTFOLIO</a></li>
                         <li><a href="resume">RESUME</a></li>
                     </div>
